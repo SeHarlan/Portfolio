@@ -1,0 +1,136 @@
+@mixin rotate($degrees, $x, $y) {
+  -webkit-transform: rotate(#{$degrees}deg) translate($x, $y);
+  -moz-transform: rotate(#{$degrees}deg) translate($x, $y);
+  -ms-transform: rotate(#{$degrees}deg) translate($x, $y);
+  transform: rotate(#{$degrees}deg) translate($x, $y);
+}
+@mixin scale($amount) {
+  -webkit-transform: scale($amount);
+  -moz-transform: scale($amount);
+  -ms-transform: scale($amount);
+  transform: scale($amount);
+}
+@mixin stopAnimation {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@mixin hover {
+  animation: hover infinite ease-in-out 1.5s both;
+  @include keyframes(hover) {
+    0% { @include rotate(0, 0, 0)}
+    10% { @include rotate(0, 0, -0.5px)}
+    20% { @include rotate(0, 0, -1px)}
+    30% { @include rotate(-0.05, 0, -1.5px)}
+    40% { @include rotate(-0.07, 0, -2px)}
+    50% { @include rotate(-0.1, 0, -2.5px)}
+    60% { @include rotate(-0.07, 0, -2px)}
+    70% { @include rotate(-0.05, 0, -1.5px)}
+    80% { @include rotate(0, 0, -1px)}
+    90% { @include rotate(0, 0, -0.5px)}
+    100% { @include rotate(0, 0, 0)}
+  }
+}
+@mixin shakeAnimation($startdeg, $delay) {
+  animation: shake#{$startdeg} infinite ease-out 10s $delay alternate both;
+  @include keyframes(shake#{$startdeg}) {
+    0% { @include rotate($startdeg, 0px, 0px);}
+    90% { @include rotate($startdeg, 1px, 1px);}
+    91% { @include rotate($startdeg - 1, -1px, -2px); }
+    92% { @include rotate($startdeg + 1, -3px, 0px); }
+    93% { @include rotate($startdeg, 3px, 2px); }
+    94% { @include rotate($startdeg + 1, 1px, -1px); }
+    95% { @include rotate($startdeg - 1, -1px, 2px); }
+    96% { @include rotate($startdeg, -3px, 1px); }
+    97% { @include rotate($startdeg - 1, 3px, 1px); }
+    98% { @include rotate($startdeg + 1, -1px, -1px); }
+    99% { @include rotate($startdeg, 1px, 2px); }
+    100% { @include rotate($startdeg - 1, 1px, -2px); }
+  }
+}
+.navigation {
+  position: absolute;
+  top: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  z-index: 2;
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.05s;
+  }
+  h4 {
+    width: 80px;
+    height: 16px;
+    position: relative;
+    top: -50%;
+    background-color: rgba(255, 235, 205, 0.6);
+    line-height: 1em;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    width: 15vw;
+    max-width: 200px;
+    filter: drop-shadow(2px 2px 4px rgba(215, 11, 167, 0.4));
+  }
+}
+
+.home-header {
+  .scott-harlan {
+    @include hover()
+  }
+  .home {
+    position: relative;
+    top: 30vh;
+    @include shakeAnimation(-8, 0s);
+  }
+  .about {
+    position: relative;
+    top: 5vh;
+    left: -15vw;
+    @include shakeAnimation(-4, 5s);
+  }
+  .projects{
+    position: relative;
+    top: 5vh;
+    right: -15vw;
+    @include shakeAnimation(4, 10s);
+  }
+  .contact {
+    position: relative;
+    top: 30vh;
+    @include shakeAnimation(8, 15s);
+  }
+}
+
+
+.home:hover, .about:hover, .projects:hover, .contact:hover {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
+.home:active, .about:active, .projects:active, .contact:active {
+  @include stopAnimation();
+  @include scale(0.9);
+  filter: drop-shadow(0 0);
+}

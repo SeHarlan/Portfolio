@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './css/App.css';
+import './css/animations.css'
 import {
   BrowserRouter as Router,
   Route

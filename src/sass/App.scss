@@ -1,15 +1,21 @@
 @use 'nav';
 
 $bgcolor: rgba(255, 95, 204, 0.3);
-$font-color: rgba(0, 1, 47, 0.8);
+$bgcolor2: rgb(172, 0, 187);
+$font-color: rgba(255, 235, 205, 0.9);
 $shadow-color: rgba(70, 0, 140, 0.7);
+$border-color: rgba(218, 165, 32, 0.5);
 $title-font: 'Kaushan Script', cursive;
 $body-font: 'Oleo Script', cursive;
 
+// $other-font: 'VT323', monospace;
+$other-font: 'Roboto Mono', monospace;
 body {
-  background-color: $bgcolor;
+  background-color: $bgcolor2;
   font-family: $body-font;
   color: $font-color;
+  text-shadow: 2px 2px 3px $shadow-color;
+
 }
 canvas {
   position: absolute;
@@ -21,9 +27,10 @@ canvas {
 }
 a {
   text-decoration: none;
+  text-shadow: none;
 }
 .home-header {
-  background: linear-gradient(to bottom, $bgcolor, rgb(172, 0, 187));
+  background: linear-gradient(to bottom, $bgcolor, $bgcolor2);
   height: 95vh;
   display: flex;
   flex-direction: column;
@@ -43,14 +50,14 @@ a {
     min-width: 350px;
     position: relative;
     margin-top: 100px;
-    top: 250px;
+    // top: 250px;
+    bottom: -240px;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
-    line-height: 3em;
-    letter-spacing: 0.06em;
-    color: rgba(255, 235, 205, 0.8);
-    text-shadow: 2px 2px 3px $shadow-color;
+    line-height: 2.5em;
+    color: $font-color;
+    
   }
   .grid {
     width: 100vw;
@@ -61,6 +68,108 @@ a {
     opacity: 0.6;
   }
 }
-
-
-
+.home-about {
+  background-color:$bgcolor;
+  z-index: 3;
+  margin: 10px 40px;
+  padding: 10px 40px 10px 40px;
+  border: 10px double $border-color;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  line-height: 1.7em;
+  font-family: $other-font;
+  overflow: hidden;
+  img {
+    float: left;
+  }
+}
+.home-projects {
+  .project-bg {
+    position: relative;
+    width: 100%;
+  }
+  padding: 10px 60px;
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-top: 5px dotted purple;
+    h1 {
+      text-decoration: underline;
+      font-size: 3em;
+    }
+    img {
+      width: 180px;
+    }
+  }
+  h5 {
+    width: 100%;
+    font-family: $other-font;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  %projectDiv {
+    width: 95%;
+    margin: 40px auto;
+    min-height: 250px;
+    font-family: $other-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      width: 300px;
+      height: 50px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: $bgcolor;
+      border-radius: 10px;
+      border: 5px double $border-color;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    article {
+      width: 70%;
+      border: 5px dotted purple;
+      border-radius: 5px;
+      padding: 0 10px 0 25px;
+      position: relative;
+      top: 30px;
+      background-color: $bgcolor;
+      transition: 0.2s;
+      opacity: 0;
+    }
+    img {
+      width: 250px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    h3 {
+      font-family: $body-font;
+      font-size: 2em;
+      margin-right: 10px;
+    }
+    a {
+      font-family: $body-font;
+    }
+  }
+  .project-div {
+    @extend %projectDiv;
+    article {
+      left: -120px
+    }
+  }
+  .project-div-right {
+    @extend %projectDiv;
+    section {
+      position: relative;
+      right: -100px
+    }
+    article{ 
+      right: -120px;
+      z-index: 2;
+    }
+  }
+}

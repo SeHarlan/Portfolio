@@ -1768,7 +1768,7 @@
   transform: rotate(5deg) translate(-50px, 15px);
 }
 
-.projects-bg {
+.water-bg {
   animation: hovernormal infinite ease-in-out 1.5s both normal;
 }
 @-webkit-keyframes hovernormal {

@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 .home-contact header h1, .home-projects header h1 {
   text-decoration: underline;
@@ -56,14 +56,6 @@
 }
 .home-contact header img, .home-projects header img {
   width: 180px;
-}
-
-.home-projects .projects-bg {
-  width: 100vw;
-  opacity: 0.1;
-  z-index: -1;
-  position: absolute;
-  left: 0;
 }
 
 body {
@@ -133,11 +125,11 @@ a {
 }
 
 .home-projects {
+  background-color: rgba(128, 0, 128, 0.3);
+  width: 80%;
+  margin: 0 auto;
   padding: 10px 60px;
   margin-top: 10px;
-}
-.home-projects .projects-bg {
-  top: 96vh;
 }
 .home-projects header {
   border-top: 5px dotted purple;
@@ -172,7 +164,7 @@ a {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .home-projects .project-div-right article, .home-projects .project-div article {
-  width: 70%;
+  width: 80%;
   border: 5px dotted purple;
   border-radius: 5px;
   padding: 0 10px 0 25px;
@@ -209,6 +201,16 @@ a {
 
 .home-contact header {
   padding: 0;
+}
+
+.water-bg {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.1;
+  z-index: -3;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

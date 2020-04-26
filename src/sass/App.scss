@@ -1,4 +1,6 @@
 @use 'nav';
+@use 'about-page';
+@use 'contact-page';
 
 $bgcolor: rgba(255, 95, 204, 0.3);
 $bgcolor2: rgb(172, 0, 187);
@@ -53,9 +55,11 @@ a {
   text-decoration: none;
   text-shadow: none;
 }
-.home-header {
+.home-header, .about-header, .contact-header {
   background: linear-gradient(to bottom, $bgcolor, $bgcolor2);
   height: 95vh;
+}
+.home-header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -74,7 +78,6 @@ a {
     min-width: 350px;
     position: relative;
     margin-top: 100px;
-    // top: 250px;
     bottom: -240px;
     font-style: italic;
     font-size: 1.5em;
@@ -83,28 +86,22 @@ a {
     color: $font-color;
     
   }
-  .grid {
-    width: 100vw;
-    max-height: 40vh;
-    z-index: 0;
-    position: absolute;
-    bottom: 5vh;
-    opacity: 0.6;
-  }
 }
-.home-about {
+.about-card {
   @extend %card;
   font-family: $other-font;
   img {
     float: left;
+    width: 200px;
   }
 }
-.home-projects {
+.highlighted-projects {
   background-color:rgba(128, 0, 128, 0.3);
   width: 80%;
   margin: 0 auto;
   padding: 10px 60px;
   margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   header {
     border-top: 5px dotted purple;
     @extend %sub-heading;
@@ -180,12 +177,42 @@ a {
     }
   }
 }
-.home-contact {
+.contact-card {
   @extend %card;
   header {
     @extend %sub-heading;
     padding: 0;
   }
+  section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  img {
+    width: 100px;
+  }
+  button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+  }
+}
+.resumeImage {
+  height: 80vh;
+}
+.modal-button {
+  font-family: $body-font;
+  font-size: 1em;
+  border-radius: 5px;
+  outline: none;
+}
+.grid {
+  width: 100vw;
+  max-height: 40vh;
+  z-index: 0;
+  position: absolute;
+  bottom: 5vh;
+  opacity: 0.6;
 }
 .water-bg {
   width: 100vw;
@@ -195,4 +222,12 @@ a {
   position: fixed;
   left: 0;
   top: 0
+}
+.ReactModal__Overlay {
+  z-index: 5;
+}
+.spacer {
+  height: 20vh;
+  margin: 0;
+  padding: 0;
 }

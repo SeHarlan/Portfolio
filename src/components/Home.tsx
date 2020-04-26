@@ -40,6 +40,7 @@ export default class Home extends Component {
         </div>
 
         <div className="home-projects">
+          <img className="projects-bg" src="/images/water-bg.jpg" alt="water background" />
           <header>
             <h1>Highlighted Projects</h1>
             <img src="/images/gameboy.gif" alt="gameboy" />
@@ -53,7 +54,7 @@ export default class Home extends Component {
                 <a href="https://shadespeare-insults.herokuapp.com" target="_blank" rel="noopener noreferrer">Site</a>
                 <a href="https://github.com/Shakespeare-Insult-Bot" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
-              <img src="images/shadespeare.png" alt="shadespeare" />
+              <img src="/images/shadespeare.png" alt="shadespeare" />
             </section>
             <article>
               <h4>Markov Chain / Twilio / Regex / Jest / Supertest / React / Node / MongoDB / Mongoose / Heroku</h4>
@@ -73,7 +74,7 @@ export default class Home extends Component {
                 <a href="https://alchimia-by-the-meeps.github.io/alchimia/" target="_blank" rel="noopener noreferrer">Site</a>
                 <a href="https://github.com/Alchimia-by-the-meeps/alchimia" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
-              <img src="images/alchimia.png" alt="alchimia" />
+              <img src="/images/alchimia.png" alt="alchimia" />
             </section>
           </div>
 
@@ -84,7 +85,7 @@ export default class Home extends Component {
                 <a href="https://the-mosaic.herokuapp.com/" target="_blank" rel="noopener noreferrer">Site</a>
                 <a href="https://github.com/mosaic-api" target="_blank" rel="noopener noreferrer">Github</a>
               </div>
-              <img src="images/mosaic.png" alt="mosaic" />
+              <img src="/images/mosaic.png" alt="mosaic" />
             </section>
             <article>
               <h4>Color API / Web Audio API / Material UI / Jest / Supertest / Superagent / React / Node / SQL / Heroku</h4>
@@ -94,10 +95,14 @@ export default class Home extends Component {
         </div>
 
         <div className="home-contact">
-          <h3>{this.state.greeting} Would You Like To Hire Me?</h3>
+          <header>
+            <h1>Wanna Hire Me?</h1>
+            <img src="/images/ok-hand.gif" alt="ok-hand" />
+          </header>
           <a href="mailto:seharlan@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
           <a href="https://www.linkedin.com/in/scottharlan-pnw/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/SeHarlan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {/* <img className="water-bg" src="/images/water-bg.jpg" alt="water background" /> */}
         </div>
       </section>
     )

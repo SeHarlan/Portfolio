@@ -106,7 +106,9 @@
     }
   }
 }
-
+.projects-bg {
+  @include hover(normal)
+}
 .project-div:hover, .project-div-right:hover {
   article {
     opacity: 1;

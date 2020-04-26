@@ -32,6 +32,40 @@
   filter: drop-shadow(2px 2px 4px rgba(215, 11, 167, 0.4));
 }
 
+.home-contact, .home-about {
+  background-color: rgba(255, 95, 204, 0.3);
+  z-index: 3;
+  margin: 10px 40px;
+  padding: 10px 40px 10px 40px;
+  border: 10px double rgba(218, 165, 32, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  line-height: 1.7em;
+  overflow: hidden;
+}
+
+.home-contact header, .home-projects header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+.home-contact header h1, .home-projects header h1 {
+  text-decoration: underline;
+  font-size: 3em;
+}
+.home-contact header img, .home-projects header img {
+  width: 180px;
+}
+
+.home-projects .projects-bg {
+  width: 100vw;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+}
+
 body {
   background-color: #ac00bb;
   font-family: "Oleo Script", cursive;
@@ -92,16 +126,7 @@ a {
 }
 
 .home-about {
-  background-color: rgba(255, 95, 204, 0.3);
-  z-index: 3;
-  margin: 10px 40px;
-  padding: 10px 40px 10px 40px;
-  border: 10px double rgba(218, 165, 32, 0.5);
-  border-radius: 10px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-  line-height: 1.7em;
   font-family: "Roboto Mono", monospace;
-  overflow: hidden;
 }
 .home-about img {
   float: left;
@@ -109,24 +134,13 @@ a {
 
 .home-projects {
   padding: 10px 60px;
+  margin-top: 10px;
 }
-.home-projects .project-bg {
-  position: relative;
-  width: 100%;
+.home-projects .projects-bg {
+  top: 96vh;
 }
 .home-projects header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px;
   border-top: 5px dotted purple;
-}
-.home-projects header h1 {
-  text-decoration: underline;
-  font-size: 3em;
-}
-.home-projects header img {
-  width: 180px;
 }
 .home-projects h5 {
   width: 100%;
@@ -186,10 +200,15 @@ a {
 .home-projects .project-div-right section {
   position: relative;
   right: -100px;
+  margin-right: 10px;
 }
 .home-projects .project-div-right article {
   right: -120px;
   z-index: 2;
+}
+
+.home-contact header {
+  padding: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -33,12 +33,40 @@
 }
 
 .about-page .about-card {
-  position: absolute;
-  top: 40vh;
+  position: relative;
+  top: 25vh;
+  border: none;
+}
+.about-page .about-card img {
+  float: right;
+}
+.about-page article {
+  padding: 5px 30px;
+  position: relative;
+  top: 22vh;
+  margin: 0 auto;
+  background-color: #ac00bb;
+  border: 5px dotted purple;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+.about-page article h2 {
+  text-align: center;
+}
+.about-page article p {
+  font-family: "Roboto Mono", monospace;
+}
+.about-page article h3 {
+  display: inline;
+}
+.about-page .contact-card {
+  margin-top: 0;
 }
 
 .contact-page .contact-header {
-  height: 100vh;
+  height: 99vh;
 }
 .contact-page .contact-card {
   position: relative;

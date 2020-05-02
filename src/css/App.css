@@ -31,20 +31,21 @@
   max-width: 200px;
   filter: drop-shadow(2px 2px 4px rgba(215, 11, 167, 0.4));
 }
+.navigation .contact img {
+  filter: brightness(90%);
+}
 
 .about-page .about-card {
-  position: relative;
-  top: 25vh;
+  position: absolute;
+  top: 40vh;
   border: none;
 }
 .about-page .about-card img {
   float: right;
 }
 .about-page article {
-  padding: 5px 30px;
-  position: relative;
-  top: 22vh;
-  margin: 0 auto;
+  padding: 0 30px;
+  margin: 0px auto 30px auto;
   background-color: #ac00bb;
   border: 5px dotted purple;
   border-radius: 10px;
@@ -54,15 +55,13 @@
 }
 .about-page article h2 {
   text-align: center;
+  margin: 5px;
 }
 .about-page article p {
   font-family: "Roboto Mono", monospace;
 }
 .about-page article h3 {
   display: inline;
-}
-.about-page .contact-card {
-  margin-top: 0;
 }
 
 .contact-page .contact-header {
@@ -245,6 +244,9 @@ a {
 
 .contact-card header {
   padding: 0;
+}
+.contact-card header img {
+  filter: brightness(80%);
 }
 .contact-card section {
   display: flex;

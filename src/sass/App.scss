@@ -182,6 +182,9 @@ a {
   header {
     @extend %sub-heading;
     padding: 0;
+    img {
+      filter: brightness(80%);
+    }
   }
   section {
     display: flex;

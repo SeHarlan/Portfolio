@@ -1,17 +1,17 @@
 .about-page {
   .about-card {
-    position: relative;
-    top: 25vh;
+    position: absolute;
+
+    top: 40vh;
     border: none;
     img {
       float: right
     }
   }
   article {
-    padding: 5px 30px;
-    position: relative;
-    top: 22vh;
-    margin: 0 auto;
+    padding: 0 30px;
+    margin: 0px auto 30px auto;
+
     background-color: rgb(172, 0, 187);
     border: 5px dotted purple;
     border-radius: 10px;
@@ -20,6 +20,7 @@
     z-index: 4;
     h2 {
       text-align: center;
+      margin: 5px
     }
     p {
       font-family: 'Roboto Mono', monospace;;
@@ -27,8 +28,5 @@
     h3 {
       display: inline;
     }
-  }
-  .contact-card {
-    margin-top: 0;
   }
 }

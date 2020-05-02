@@ -6,7 +6,7 @@ export default class ContactCard extends Component {
     return <div className="contact-card">
       <header>
         <h1>Wanna Hire Me?</h1>
-        <img src="/images/ok-hand.gif" alt="ok-hand" />
+        <img src="/images/computor.gif" alt="computer" />
       </header>
       <section>
         <a className="linkedin" href="https://www.linkedin.com/in/scottharlan-pnw/" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin-icon.png" alt="linked in" /></a>

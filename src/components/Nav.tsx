@@ -18,7 +18,7 @@ export default class Nav extends Component {
           <h4>Projects</h4>
         </Link>
         <Link className="contact" to='/contact'>
-          <img src="/images/ok-hand.png" alt="contact" />
+          <img src="/images/computor.png" alt="contact" />
           <h4>Contact</h4>
         </Link>
       </div>

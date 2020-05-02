@@ -168,6 +168,7 @@ a {
 
 .about-card {
   font-family: "Roboto Mono", monospace;
+  margin-top: 0;
 }
 .about-card img {
   float: left;

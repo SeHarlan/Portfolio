@@ -90,6 +90,7 @@ a {
 .about-card {
   @extend %card;
   font-family: $other-font;
+  margin-top: 0;
   img {
     float: left;
     width: 200px;

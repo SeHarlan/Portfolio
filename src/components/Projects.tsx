@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from './Nav'
 import HighlightedProjects from './HighlightedProjects'
 import ContactCard from './ContactCard'
+import ProjectCard from './ProjectCard'
 
 export default class Projects extends Component {
   render() {
@@ -13,17 +14,23 @@ export default class Projects extends Component {
         <HighlightedProjects />
         <ContactCard />
 
-        <h2>More Projects</h2>
-        <div>
-          <h3>Data Structures and Algorithms</h3>
-          <a href="https://github.com/SeHarlan/data-structures-and-algorithms" target="_blank" rel="noopener noreferrer">Github</a>
-          <p>A series of whiteboard challenges including Linked Lists, Binary Trees, and Stacks and Queues (see branches)</p>
+        <div className="highlighted-projects">
+          <header>
+            <h1>More Projects</h1>
+          </header>
+          <ProjectCard title="Data Structures..."
+          github="https://github.com/SeHarlan/data-structures-and-algorithms"
+          tech="Javascript"
+          body="A series of whiteboard challenges including Linked Lists, Binary Trees, and Stacks and Queues (see branches)"
+          />
+          <ProjectCard title="Unripe-Banana"
+          right={true}
+          github="https://github.com/SeHarlan/unripe-banana"
+          tech="Node / Express / Jest / Supertest / Mongoose / MongoDB"
+          body="A Rotten Tomato clone (back-end only) utilizing Express/Node with MongoDB aggregations and Mongoose's virtuals and static methods."
+          />
         </div>
-        <div>
-          <h3>Unripe-Banana</h3>
-          <a href="https://github.com/SeHarlan/unripe-banana" target="_blank" rel="noopener noreferrer">Github</a>
-          <p>A Rotten Tomato back-end clone utilizing Express/Node, Jest, SuperTest, Mongoose, and MongoDB with aggregations and other static methods.</p>
-        </div>
+
       </section>
     )
   }

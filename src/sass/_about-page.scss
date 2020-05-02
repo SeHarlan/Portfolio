@@ -1,7 +1,16 @@
 .about-page {
+  .about-header {
+    h1 {
+      width: 100%;
+      position: absolute;
+      top: 23vh;
+      font-size: 3.5em;
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
   .about-card {
     position: absolute;
-
     top: 40vh;
     border: none;
     img {

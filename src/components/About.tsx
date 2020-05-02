@@ -11,6 +11,7 @@ export default class About extends Component {
         <header className="about-header">
           <Nav />
           <Waves />
+          <h1>About Scott</h1>
           <AboutCard />
           <img className="grid" src="/images/grid.png" alt="grid" />
 

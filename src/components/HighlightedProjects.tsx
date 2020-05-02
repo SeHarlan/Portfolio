@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProjectCard from './ProjectCard'
 
 export default class HighlightedProjects extends Component {
   render() {
@@ -9,6 +10,12 @@ export default class HighlightedProjects extends Component {
       </header>
       <h5>~ Sites hosted with Heroku may take a moment to wake up ~</h5>
 
+      <ProjectCard title="Shadespeare" 
+      site="https://shadespeare-insults.herokuapp.com" 
+      github="https://github.com/Shakespeare-Insult-Bot" 
+      image="/images/shadespeare.png" 
+      tech="Markov Chain / Twilio / Regex / Jest / Supertest / React / Node / MongoDB / Mongoose / Heroku"
+      body={`Using the markov-chains-text library we generated Shakespeare inspired "insults" for our bot "Shadespeare". With Twilio's calling and text to voice features we are able to send in Shadespeare to speak in a Zoom call. I lead our team in creating the chatbot, where we utilized regex to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`} />
       <div className="project-div">
         <section>
           <div>

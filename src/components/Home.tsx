@@ -4,6 +4,7 @@ import Waves from './Waves'
 import ContactCard from './ContactCard'
 import AboutCard from './AboutCard'
 import HighlightedProjects from './HighlightedProjects'
+import Arrows from './Arrows'
 
 export default class Home extends Component {
   state = {
@@ -33,6 +34,7 @@ export default class Home extends Component {
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
           <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
           <img className="grid" src="/images/grid.png" alt="grid" />
+          <Arrows />
         </header>
 
         <section>

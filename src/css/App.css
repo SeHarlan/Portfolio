@@ -72,18 +72,61 @@
   display: inline;
 }
 
-.contact-page .contact-header {
-  height: 99vh;
+.contact-page .contact-header div {
+  width: 80vw;
+  left: 10vw;
+  position: absolute;
+  top: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contact-page .contact-card {
-  position: relative;
-  top: 35vh;
+.contact-page .contact-header div h1 {
+  font-size: 3.5em;
+  text-decoration: underline;
+  margin-left: 2rem;
 }
-.contact-page canvas {
-  height: 100vh;
+.contact-page .contact-header div img {
+  width: 200px;
+  z-index: 4;
 }
-.contact-page .grid {
-  bottom: 0;
+.contact-page section {
+  box-sizing: border-box;
+  width: 94vw;
+  position: absolute;
+  top: 40vh;
+  left: 3vw;
+  background-color: rgba(255, 95, 204, 0.3);
+  z-index: 3;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  line-height: 1.7em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-page section a, .contact-page section .resume-button-container {
+  width: 80vw;
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: inherit;
+  text-shadow: inherit;
+}
+.contact-page section a h2, .contact-page section .resume-button-container h2 {
+  text-align: right;
+}
+.contact-page section a button, .contact-page section .resume-button-container button {
+  width: 0;
+  padding: 0;
+}
+.contact-page section a img, .contact-page section .resume-button-container img {
+  width: 100px;
+  margin-left: 2rem;
 }
 
 .contact-card, .about-card {
@@ -123,7 +166,7 @@ canvas {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   z-index: -1;
   opacity: 0.6;
 }
@@ -135,7 +178,7 @@ a {
 
 .home-header, .about-header, .contact-header {
   background: linear-gradient(to bottom, rgba(255, 95, 204, 0.3), #ac00bb);
-  height: 95vh;
+  height: 100vh;
 }
 
 .home-header {
@@ -251,11 +294,19 @@ a {
   z-index: 2;
 }
 
+.contact-card {
+  margin: 0.5rem;
+}
 .contact-card header {
   padding: 0;
+  justify-content: center;
+}
+.contact-card header h1 {
+  font-size: 2rem;
 }
 .contact-card header img {
   filter: brightness(80%);
+  width: 100px;
 }
 .contact-card section {
   display: flex;
@@ -263,9 +314,10 @@ a {
   align-items: center;
 }
 .contact-card img {
-  width: 100px;
+  width: 50px;
 }
-.contact-card button {
+
+.resume {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   outline: none;
@@ -287,7 +339,7 @@ a {
   max-height: 40vh;
   z-index: 0;
   position: absolute;
-  bottom: 5vh;
+  bottom: 0;
   opacity: 0.6;
 }
 
@@ -309,6 +361,19 @@ a {
   height: 20vh;
   margin: 0;
   padding: 0;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 0 10vw;
+}
+.arrow-container img {
+  width: 6rem;
 }
 
 /*# sourceMappingURL=App.css.map */

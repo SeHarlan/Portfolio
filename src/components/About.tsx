@@ -3,6 +3,7 @@ import Nav from './Nav'
 import AboutCard from './AboutCard'
 import ContactCard from './ContactCard'
 import Waves from './Waves'
+import Arrows from './Arrows'
 
 export default class About extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class About extends Component {
           <h1>About Scott</h1>
           <AboutCard />
           <img className="grid" src="/images/grid.png" alt="grid" />
-
+          <Arrows />
         </header>
         <article>
           <h2>Tech Skills and Tools</h2>

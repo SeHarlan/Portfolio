@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -15,7 +14,7 @@ const customStyles = {
 
 Modal.setAppElement('#root')
 
-export default function ResumeModal() {
+export default function ResumeModal({page}: {page?: boolean}) {
 
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
@@ -28,7 +27,13 @@ export default function ResumeModal() {
 
   return (
     <div className="modal-div">
-      <button className="resume" onClick={openModal}><img src="/images/resume-icon.png" alt="resume" /></button>
+      <div className="resume-button-container">
+        {page && (<label htmlFor="resume"><h2>View Scott's Resume</h2></label>)}
+        <button className="resume" id="resume" onClick={openModal}>
+          <img src="/images/resume-icon.png" alt="resume" />
+        </button>
+
+      </div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

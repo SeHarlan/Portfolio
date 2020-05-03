@@ -47,7 +47,7 @@ canvas {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   z-index: -1;
   opacity: 0.6;
 }
@@ -57,7 +57,7 @@ a {
 }
 .home-header, .about-header, .contact-header {
   background: linear-gradient(to bottom, $bgcolor, $bgcolor2);
-  height: 95vh;
+  height: 100vh;
 }
 .home-header {
   display: flex;
@@ -180,11 +180,17 @@ a {
 }
 .contact-card {
   @extend %card;
+  margin: 0.5rem;
   header {
     @extend %sub-heading;
     padding: 0;
+    justify-content: center;
+    h1 {
+      font-size: 2rem;
+    }
     img {
       filter: brightness(80%);
+      width: 100px;
     }
   }
   section {
@@ -193,13 +199,13 @@ a {
     align-items: center;
   }
   img {
-    width: 100px;
+    width: 50px;
   }
-  button {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    outline: none;
-  }
+}
+.resume {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
 }
 .resumeImage {
   height: 80vh;
@@ -215,7 +221,7 @@ a {
   max-height: 40vh;
   z-index: 0;
   position: absolute;
-  bottom: 5vh;
+  bottom: 0;
   opacity: 0.6;
 }
 .water-bg {
@@ -234,4 +240,16 @@ a {
   height: 20vh;
   margin: 0;
   padding: 0;
+}
+.arrow-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 0 10vw;
+  img {
+    width: 6rem;
+  }
 }

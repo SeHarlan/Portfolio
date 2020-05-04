@@ -32,7 +32,8 @@ export default class Home extends Component {
           <Nav />
           <Waves />
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
-          <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
+          {/* <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p> */}
+          <h1>Still In Development</h1>
           <img className="grid" src="/images/grid.png" alt="grid" />
           <Arrows />
         </header>

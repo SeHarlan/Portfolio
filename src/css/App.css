@@ -110,9 +110,10 @@
 }
 .contact-page section a, .contact-page section .resume-button-container {
   width: 80vw;
-  margin: 0.5rem;
+  margin: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
   align-items: center;
   color: inherit;
   text-shadow: inherit;
@@ -126,7 +127,7 @@
 }
 .contact-page section a img, .contact-page section .resume-button-container img {
   width: 100px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .contact-card, .about-card {

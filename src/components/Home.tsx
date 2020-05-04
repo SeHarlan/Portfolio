@@ -33,7 +33,7 @@ export default class Home extends Component {
           <Waves />
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
           {/* <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p> */}
-          <h1>Still In Development</h1>
+          <p>Still In Development</p>
           <img className="grid" src="/images/grid.png" alt="grid" />
           <Arrows />
         </header>

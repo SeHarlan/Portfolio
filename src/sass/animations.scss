@@ -112,10 +112,10 @@
 .arrow-container {
   @include hover(normal);
   .left-arrow {
-    @include shakeAnimation(190, 20s)
+    @include shakeAnimation(160, 20s)
   }
   .right-arrow {
-    @include shakeAnimation(-100, 20s)
+    @include shakeAnimation(-160, 20s)
   }
 }
 .project-div:hover, .project-div-right:hover {

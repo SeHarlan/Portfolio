@@ -7,7 +7,9 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="contact-page">
+        <Nav />
         <header className="contact-header">
+
           <div>
             <img src="/images/computor.gif" alt="computer" />
             <h1>Contact Information</h1>
@@ -31,7 +33,7 @@ export default class Contact extends Component {
               <ResumeModal page={true}/> 
 
           </section>
-          <Nav />
+          
           <Waves />
           <img className="grid" src="/images/grid.png" alt="grid" />
       </section>

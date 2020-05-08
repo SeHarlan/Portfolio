@@ -1,11 +1,14 @@
 .navigation {
-  position: absolute;
-  top: 10px;
+  position: fixed;
   width: 100vw;
+  padding: 1rem 10vw 0 10vw;
+  height: 8rem;
+  background-color: rgba(128, 0, 128, 0.7);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  z-index: 2;
+  z-index: 6;
 }
 .navigation a {
   display: flex;
@@ -19,7 +22,7 @@
   height: 16px;
   position: relative;
   top: -50%;
-  background-color: rgba(255, 235, 205, 0.6);
+  background-color: rgba(255, 235, 205, 0.8);
   line-height: 1em;
   letter-spacing: 0.06em;
   font-weight: normal;
@@ -27,8 +30,7 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .navigation img {
-  width: 15vw;
-  max-width: 200px;
+  width: 100px;
   filter: drop-shadow(2px 2px 4px rgba(215, 11, 167, 0.4));
 }
 .navigation .contact img {
@@ -188,6 +190,20 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
+.home-header .navigation {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0;
+}
+.home-header .navigation img {
+  width: 15vw;
+  max-width: 200px;
+  min-width: 100px;
+}
+.home-header .navigation h4 {
+  top: -80%;
+}
 .home-header .scott-harlan {
   width: 50vw;
   min-width: 350px;
@@ -216,6 +232,7 @@ a {
   margin-top: 0;
   max-height: 40vh;
   overflow: scroll;
+  overflow-x: hidden;
 }
 .about-card img {
   float: left;
@@ -254,6 +271,7 @@ a {
   width: 300px;
   height: 50px;
   padding: 0 20px;
+  margin-left: 1.5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -273,6 +291,7 @@ a {
   transition: 0.2s;
   opacity: 0;
   overflow: scroll;
+  overflow-x: hidden;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
 }
 .highlighted-projects .project-div-right img, .highlighted-projects .project-div img {
@@ -288,14 +307,14 @@ a {
   font-family: "Oleo Script", cursive;
 }
 .highlighted-projects .project-div article {
-  margin-left: -120px;
+  margin-left: -5rem;
 }
 .highlighted-projects .project-div-right section {
   position: relative;
-  right: -100px;
+  right: -4.5rem;
 }
 .highlighted-projects .project-div-right article {
-  margin-right: -120px;
+  margin-right: -5rem;
   z-index: 2;
 }
 

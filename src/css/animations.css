@@ -550,7 +550,8 @@
 }
 .home-header .home {
   position: relative;
-  top: 30vh;
+  top: 27vh;
+  left: -5vw;
   animation: shake-8 infinite ease-out 10s 0s alternate both;
 }
 @-webkit-keyframes shake-8 {
@@ -1455,7 +1456,8 @@
 }
 .home-header .contact {
   position: relative;
-  top: 30vh;
+  top: 27vh;
+  right: -5vw;
   animation: shake8 infinite ease-out 10s 15s alternate both;
 }
 @-webkit-keyframes shake8 {

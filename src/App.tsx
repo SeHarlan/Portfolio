@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/App.css';
 import './css/animations.css'
+import './css/media-queries.css';
 import {
   BrowserRouter as Router,
   Route

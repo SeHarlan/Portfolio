@@ -1,0 +1,27 @@
+@media only screen and (max-width: 420px) {
+  .highlighted-projects header {
+    flex-direction: column;
+  }
+  .highlighted-projects header h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .highlighted-projects header img {
+    width: 40vw;
+  }
+  .highlighted-projects .project-div-right article, .highlighted-projects .project-div article {
+    display: none;
+  }
+  .highlighted-projects .project-div-right img, .highlighted-projects .project-div img {
+    width: 70vw;
+  }
+  .highlighted-projects .project-div-right section, .highlighted-projects .project-div section {
+    margin: 0 auto;
+    width: 80vw !important;
+  }
+  .highlighted-projects .project-div-right section {
+    right: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=media-queries.css.map */

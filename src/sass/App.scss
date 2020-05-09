@@ -269,12 +269,33 @@ a {
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 90vw;
   margin: 2rem auto;
-  padding: 0 10vw;
+  padding: 0 5vw;
+  overflow: hidden;
   img {
     width: 7rem;
     height: 7rem;
     filter: brightness(0.75);
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background:  rgba(255, 255, 255, 0)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(121, 20, 118, 0.5);
+  border-radius: 40%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(121, 20, 118, 0.7);
 }

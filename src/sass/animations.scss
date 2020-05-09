@@ -71,29 +71,46 @@
   p {
     @include hover(reverse)
   } 
-  .home {
-    position: relative;
-    top: 27vh;
-    left: -5vw;
-    @include shakeAnimation(-8, 0s);
+  .navigation {
+    .home {
+      @include shakeAnimation(0, 0s);
+    }
+    .about {
+      @include shakeAnimation(0, 5s);
+    }
+    .projects{
+      @include shakeAnimation(0, 10s);
+    }
+    .contact {
+      @include shakeAnimation(0, 15s);
+    }
   }
-  .about {
-    position: relative;
-    top: 5vh;
-    left: -15vw;
-    @include shakeAnimation(-4, 5s);
-  }
-  .projects{
-    position: relative;
-    top: 5vh;
-    right: -15vw;
-    @include shakeAnimation(4, 10s);
-  }
-  .contact {
-    position: relative;
-    top: 27vh;
-    right: -5vw;
-    @include shakeAnimation(8, 15s);
+  .navigation-home {
+    .home {
+      position: relative;
+      top: 27vh;
+      left: -5vw;
+      @include shakeAnimation(-8, 0s);
+    }
+    .about {
+      position: relative;
+      top: 5vh;
+      left: -15vw;
+      @include shakeAnimation(-4, 5s);
+    }
+    .projects{
+      position: relative;
+      top: 5vh;
+      right: -15vw;
+      @include shakeAnimation(4, 10s);
+    }
+    .contact {
+      position: relative;
+      top: 27vh;
+      right: -5vw;
+      @include shakeAnimation(8, 15s);
+    }
+
   }
 }
 .highlighted-projects {

@@ -1,22 +1,52 @@
 @media only screen and (max-width: 420px) {
-
-
-  // .navigation {
-  //   display: none;
-  // }
+  .navigation {
+    height: 4.6rem;
+    top: -0.5rem;
+    h4 {
+      width: 50px;
+      font-size: 0.7rem;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .home-header {
+    .scott-harlan {
+      width: 80vw;
+      min-width: 280px; 
+    }
+    p {
+      font-size: 1.05rem;
+      min-width: 90vw;
+    }
+  }
+  .arrow-container {
+    margin: 0;
+    img {
+      width: 4rem;
+      height: 4rem
+    }
+  }
+  .about-card {
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+    img {
+      width: 100px;
+    }
+  }
   .highlighted-projects {
+    width: 92%;
     header {
-      flex-direction: column;
       h1 {
         font-size: 2em;
-        text-align: center;
       }
       img {
-        width: 40vw
+        width: 100px
       }
     }
     %project {
-      // display: none !important;
       article {
         display: none;
       }
@@ -27,7 +57,10 @@
         margin: 0 auto;
         width: 80vw !important
       }
-    
+      div {
+        width: 86vw;
+        transform: translate(-3.15rem, 0.5rem);
+      }
     }
     .project-div {
       @extend %project;
@@ -38,5 +71,9 @@
         right: 0px !important
       }
     }
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
   }
 }

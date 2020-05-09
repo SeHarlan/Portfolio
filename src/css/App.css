@@ -1,16 +1,18 @@
 .navigation {
   position: fixed;
   width: 100vw;
-  padding: 1rem 10vw 0 10vw;
+  padding: 1rem 5vw 0 5vw;
   height: 8rem;
   background-color: rgba(128, 0, 128, 0.7);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   z-index: 6;
 }
 .navigation a {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +33,7 @@
 }
 .navigation img {
   width: 100px;
+  height: 100px;
   filter: drop-shadow(2px 2px 4px rgba(215, 11, 167, 0.4));
 }
 .navigation .contact img {
@@ -190,19 +193,16 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-.home-header .navigation {
+.home-header .navigation-home {
   position: absolute;
   top: 0;
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 0 0;
 }
-.home-header .navigation img {
+.home-header .navigation-home img {
   width: 15vw;
   max-width: 200px;
   min-width: 100px;
-}
-.home-header .navigation h4 {
-  top: -80%;
 }
 .home-header .scott-harlan {
   width: 50vw;
@@ -246,6 +246,9 @@ a {
   padding: 10px 2rem;
   margin-top: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.highlighted-projects h1 {
+  text-align: center;
 }
 .highlighted-projects header {
   border-top: 5px dotted purple;
@@ -414,6 +417,7 @@ a {
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0);
+  width: 8px;
 }
 
 /* Handle */

@@ -200,8 +200,8 @@ a {
 }
 .home-header .navigation-home img {
   width: 15vw;
+  height: auto;
   max-width: 200px;
-  min-width: 100px;
 }
 .home-header .scott-harlan {
   width: 50vw;

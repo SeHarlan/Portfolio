@@ -62,7 +62,7 @@
   background-color: #a412b1;
   border: 5px dotted purple;
   border-radius: 10px;
-  width: 60%;
+  width: 85%;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
   z-index: 4;
 }
@@ -322,11 +322,11 @@ a {
 
 .project-page .highlighted-projects {
   position: relative;
-  top: -4.5rem;
+  top: -7vh;
 }
 .project-page .contact-card {
   position: relative;
-  top: -4.5rem;
+  top: -7vh;
 }
 .project-page .more-projects {
   margin: 0;
@@ -409,7 +409,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 90vw;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: 0 5vw;
   overflow: hidden;
 }

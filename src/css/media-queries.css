@@ -96,7 +96,7 @@
   }
   .about-page article {
     margin: -0.3rem auto;
-    padding: 0 0.7rem;
+    padding: 0.5rem 1.2rem;
     width: 95%;
   }
   .about-page article p {
@@ -107,7 +107,7 @@
     top: 11vh;
   }
   .contact-page .contact-header div h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
   .contact-page .contact-header div img {
@@ -133,6 +133,89 @@
   ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
+  }
+}
+@media only screen and (orientation: landscape) and (max-height: 420px) {
+  .navigation {
+    height: 4.6rem;
+    top: -0.5rem;
+  }
+  .navigation h4 {
+    width: 50px;
+    font-size: 0.7rem;
+  }
+  .navigation img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-header p {
+    display: none;
+  }
+
+  .arrow-container {
+    margin: 0;
+  }
+  .arrow-container img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .about-card {
+    max-height: 80vh !important;
+    font-size: 0.9rem;
+  }
+
+  .highlighted-projects header h1 {
+    font-size: 2em;
+  }
+  .highlighted-projects header img {
+    width: 100px;
+  }
+
+  .about-page .about-header h1 {
+    top: 10vh;
+    font-size: 2.3rem;
+  }
+  .about-page .about-card {
+    top: 32vh;
+    height: 50vh;
+  }
+  .about-page article {
+    width: 95%;
+  }
+  .about-page article p {
+    font-size: 0.8rem;
+  }
+
+  .contact-page .contact-header div {
+    top: 17vh;
+  }
+  .contact-page .contact-header div h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact-page .contact-header div img {
+    width: 90px;
+  }
+  .contact-page section {
+    top: 45vh;
+    width: 90vw;
+    left: 5vw;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-page section a, .contact-page section .resume-button-container {
+    width: 45vw;
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-page section a h2, .contact-page section .resume-button-container h2 {
+    font-size: 1.3rem;
+  }
+  .contact-page section a img, .contact-page section .resume-button-container img {
+    width: 50px;
   }
 }
 

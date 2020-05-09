@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard'
 export default class Projects extends Component {
   render() {
     return (
-      <section>
+      <section className="project-page">
         <img className="water-bg" src="/images/water-bg.jpg" alt="water background" />
         <Nav />
         <div className="spacer"></div>
@@ -15,8 +15,8 @@ export default class Projects extends Component {
         <ContactCard />
 
         <div className="highlighted-projects">
-          <header>
-            <h1>More Projects</h1>
+          <header >
+            <h1 className="more-projects">More Projects</h1>
           </header>
           <ProjectCard title="Data Structures..."
           github="https://github.com/SeHarlan/data-structures-and-algorithms"

@@ -103,7 +103,7 @@ a {
   @extend %card;
   font-family: $other-font;
   margin-top: 0;
-  max-height: 40vh;
+  max-height: 45vh;
   overflow: scroll;
   overflow-x: hidden;
   img {
@@ -197,6 +197,19 @@ a {
       margin-right: -5rem;
       z-index: 2;
     }
+  }
+}
+.project-page {
+  .highlighted-projects {
+    position: relative;
+    top: -4.5rem;
+  }
+  .contact-card {
+    position: relative;
+    top: -4.5rem;
+  }
+  .more-projects {
+    margin: 0;
   }
 }
 .contact-card {

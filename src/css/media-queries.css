@@ -60,9 +60,74 @@
   .highlighted-projects .project-div-right div, .highlighted-projects .project-div div {
     width: 86vw;
     transform: translate(-3.15rem, 0.5rem);
+    height: auto;
+    padding: 0;
+  }
+  .highlighted-projects .project-div-right div h3, .highlighted-projects .project-div div h3 {
+    margin: 0;
+    font-size: 1.5rem;
   }
   .highlighted-projects .project-div-right section {
     right: 0px !important;
+  }
+
+  .contact-card {
+    padding: 0;
+  }
+  .contact-card header h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .contact-card header img {
+    width: 60px;
+  }
+  .contact-card img {
+    width: 30px;
+  }
+
+  .about-page .about-header h1 {
+    font-size: 2.5rem;
+    top: 10vh;
+  }
+  .about-page .about-header .about-card {
+    top: 30vh;
+    max-height: 50vh;
+    margin: 1rem;
+  }
+  .about-page article {
+    margin: -0.3rem auto;
+    padding: 0 0.7rem;
+    width: 95%;
+  }
+  .about-page article p {
+    font-size: 0.8rem;
+  }
+
+  .contact-page .contact-header div {
+    top: 11vh;
+  }
+  .contact-page .contact-header div h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .contact-page .contact-header div img {
+    width: 100px;
+  }
+  .contact-page section {
+    width: 90vw;
+    left: 5vw;
+    padding: 1rem;
+  }
+  .contact-page section a, .contact-page section .resume-button-container {
+    width: 85vw;
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-page section a h2, .contact-page section .resume-button-container h2 {
+    font-size: 1.3rem;
+  }
+  .contact-page section a img, .contact-page section .resume-button-container img {
+    width: 50px;
   }
 
   ::-webkit-scrollbar {

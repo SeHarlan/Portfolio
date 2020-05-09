@@ -43,14 +43,14 @@
 .about-page .about-header h1 {
   width: 100%;
   position: absolute;
-  top: 23vh;
+  top: 15vh;
   font-size: 3.5em;
   text-align: center;
   text-decoration: underline;
 }
 .about-page .about-card {
   position: absolute;
-  top: 40vh;
+  top: 35vh;
   border: none;
 }
 .about-page .about-card img {
@@ -96,7 +96,6 @@
   z-index: 4;
 }
 .contact-page section {
-  box-sizing: border-box;
   width: 94vw;
   position: absolute;
   top: 40vh;
@@ -230,7 +229,7 @@ a {
 .about-card {
   font-family: "Roboto Mono", monospace;
   margin-top: 0;
-  max-height: 40vh;
+  max-height: 45vh;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -319,6 +318,18 @@ a {
 .highlighted-projects .project-div-right article {
   margin-right: -5rem;
   z-index: 2;
+}
+
+.project-page .highlighted-projects {
+  position: relative;
+  top: -4.5rem;
+}
+.project-page .contact-card {
+  position: relative;
+  top: -4.5rem;
+}
+.project-page .more-projects {
+  margin: 0;
 }
 
 .contact-card {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import resumeIcon from '../assets/resume-icon.png'
 
 const customStyles = {
   content: {
@@ -32,7 +33,7 @@ export default function ResumeModal({page}: {page?: boolean}) {
       <div className="resume-button-container">
         {page && (<label htmlFor="resume"><h2>View Scott's Resume</h2></label>)}
         <button className="resume" id="resume" onClick={openModal}>
-          <img src="/images/resume-icon.png" alt="resume" />
+          <img src={resumeIcon} alt="resume" />
         </button>
 
       </div>

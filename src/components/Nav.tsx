@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {useScreenDimensions} from '../hooks/useScreenDimensions'
+import vaporPalm from '../assets/vapor-palm.png'
 
 const Nav = ({home = false}: {home?: boolean}) => {
 
@@ -11,7 +12,7 @@ const Nav = ({home = false}: {home?: boolean}) => {
   return (
     <div className={classNames}>
       <Link className="home" to='/'>
-        <img src="/images/vapor-palm.png" alt="home" />
+        <img src={vaporPalm} alt="home" />
         <h4>Home</h4>
       </Link>
       <Link className="about" to='/about'>

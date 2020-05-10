@@ -15,7 +15,7 @@ export default class HighlightedProjects extends Component {
       github="https://github.com/Shakespeare-Insult-Bot" 
       image="/images/shadespeare.png" 
       tech="Markov Chain / Twilio / Regex / Jest / Supertest / React / Node / MongoDB / Mongoose / Heroku"
-      body={`Using the markov-chains-text library we generated Shakespeare inspired "insults" for our bot "Shadespeare". With Twilio's calling and text to voice features we are able to send in Shadespeare to speak in a Zoom call. I lead our team in creating the chatbot, where we utilized regex to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`} 
+      body={`Using the markov-chains-text library, Shakespeare inspired "insults" were generated for our the "Shadespeare". With Twilio's calling and text to voice features you are able to send in Shadespeare to speak in a Zoom call. Scott lead the team in creating the chatbot, where regex was utilized to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`} 
       />
       
       <ProjectCard title="Alchimia"
@@ -24,7 +24,7 @@ export default class HighlightedProjects extends Component {
       github="https://github.com/Alchimia-by-the-meeps/alchimia"
       image="/images/alchimia.png"
       tech="Javascript / HTML / CSS / Local Storage"
-      body="Created in a one week sprint utilizing vanilla Javascript (along with HTML/CSS) and local storage to maintain state. I proposed using hashmaps and nested arrays as data structures. This allowed us to keep track of and correctly render a series of rotate-able decorated tiles in a grid, with unique data points for each side. Using these structures in tandem we were able to validate tile placements and keep score based on the type of connections made."
+      body="Created in a one week sprint utilizing vanilla Javascript (along with HTML/CSS) and local storage to maintain state. Scott proposed using hashmaps and nested arrays as data structures. This allowed the app to keep track of and correctly render a series of rotate-able decorated tiles in a grid, with unique data points for each side. Using these structures in tandem the team was able to validate tile placements and keep score based on the type of connections made."
       />
 
       <ProjectCard title="Mosaic"
@@ -32,7 +32,7 @@ export default class HighlightedProjects extends Component {
       github="https://github.com/mosaic-api"
       image="/images/mosaic.png"
       tech="Color API / Web Audio API / Material UI / Jest / Supertest / Superagent / React / Node / SQL / Heroku"
-      body="In this Full Stack App, I lead the team in using the Color API to create cohesive color palettes the user could choose from to create their own digital mosaic. Each colored tile is accompanied by a correlated musical note generated with Web Audio API. Utilizing SQL the user can pull back saved mosaics for future modification and listening to the music generated from the mosaics they have built."
+      body="In this Full Stack App, Scott lead the team in using the Color API to create cohesive color palettes the user could choose from to create their own digital mosaic. Each colored tile is accompanied by a correlated musical note generated with Web Audio API. Utilizing SQL the user can pull back saved mosaics for future modification and listening to the music generated from the mosaics they have built."
       />
     </div>
   }

@@ -4,7 +4,7 @@
       width: 80vw;
       left: 10vw;
       position: absolute;
-      top: 23vh;
+      top: 15vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -12,6 +12,7 @@
         font-size: 3.5em;
         text-decoration: underline;
         margin-left: 2rem;
+        text-align: center;
       }
       img {
         width: 200px;
@@ -54,7 +55,7 @@
         padding: 0;
       }
       img {
-        width: 100px;
+        width: 70px;
         margin-left: 1rem
       }
     }

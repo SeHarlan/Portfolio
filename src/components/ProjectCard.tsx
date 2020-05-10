@@ -1,7 +1,9 @@
 import React from 'react'
+import { useScreenDimensions } from '../hooks/useScreenDimensions'
 
 const ProjectCard = ({right = false, title, site, github, image = "/images/node-logo.png", tech, body}: {right?: boolean, title: string, site?: string, github: string, image?: string, tech: string, body: string}) => {
 
+  const {width} = useScreenDimensions()
   const className: string = (right ? "project-div-right" : "project-div")
 
   return (
@@ -22,6 +24,10 @@ const ProjectCard = ({right = false, title, site, github, image = "/images/node-
         <h4>{tech}</h4>
         <p>{body}</p>
       </article>)}
-    </div>
+      {width < 420 && (<aside>
+        <h4>{tech}</h4>
+        <p>{body}</p>
+      </aside>)}
+  </div>
 )}
 export default ProjectCard

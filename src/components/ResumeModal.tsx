@@ -3,11 +3,13 @@ import Modal from 'react-modal';
 
 const customStyles = {
   content: {
+    width: '95vw',
     top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
+    'overflow-y': 'scroll',
     transform: 'translate(-50%, -50%)',
   }
 };
@@ -40,7 +42,7 @@ export default function ResumeModal({page}: {page?: boolean}) {
         style={customStyles}
         contentLabel="Resume Modal"
       >
-        <img className="resumeImage" src="/images/ScottHarlanResume.png" alt="Scott Harlan Resume" />
+        <img style={{width: '85vw', height: 'auto' }} className="resumeImage" src="/images/ScottHarlanResume.png" alt="Scott Harlan Resume" />
         <button className="modal-button" onClick={closeModal}>X</button>
       </Modal>
     </div>

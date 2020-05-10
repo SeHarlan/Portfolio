@@ -33,6 +33,7 @@
     padding: 0 1rem;
     margin: 0 0.5rem;
     font-size: 0.8rem;
+    min-height: 50vh;
   }
   .about-card img {
     width: 100px;
@@ -47,8 +48,25 @@
   .highlighted-projects header img {
     width: 100px;
   }
+  .highlighted-projects .project-div-right, .highlighted-projects .project-div {
+    flex-direction: column;
+  }
   .highlighted-projects .project-div-right article, .highlighted-projects .project-div article {
     display: none;
+  }
+  .highlighted-projects .project-div-right aside, .highlighted-projects .project-div aside {
+    display: none;
+    position: relative;
+    top: -1.3rem;
+    width: 85vw;
+    padding: 0 1rem;
+    background-color: rgba(255, 95, 204, 0.3);
+    border: 5px dotted purple;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    transition: 0.2s;
   }
   .highlighted-projects .project-div-right img, .highlighted-projects .project-div img {
     width: 70vw;
@@ -69,6 +87,13 @@
   }
   .highlighted-projects .project-div-right section {
     right: 0px !important;
+  }
+
+  .project-page .highlighted-projects {
+    top: 4rem;
+  }
+  .project-page .contact-card {
+    top: 4rem;
   }
 
   .contact-card {
@@ -134,11 +159,19 @@
     width: 5px;
     height: 5px;
   }
+
+  .project-div:hover aside, .project-div-right:hover aside {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .highlighted-projects {
+    width: 90%;
+  }
 }
 @media only screen and (orientation: landscape) and (max-height: 420px) {
   .navigation {
     height: 4.6rem;
-    top: -0.5rem;
   }
   .navigation h4 {
     width: 50px;
@@ -166,11 +199,26 @@
     font-size: 0.9rem;
   }
 
+  .highlighted-projects {
+    width: 95%;
+  }
   .highlighted-projects header h1 {
     font-size: 2em;
   }
   .highlighted-projects header img {
     width: 100px;
+  }
+  .highlighted-projects article {
+    padding: 0;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  .project-page .highlighted-projects {
+    top: 4rem;
+  }
+  .project-page .contact-card {
+    top: 4rem;
   }
 
   .about-page .about-header h1 {

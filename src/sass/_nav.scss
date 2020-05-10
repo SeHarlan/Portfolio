@@ -1,10 +1,15 @@
 .navigation {
   position: fixed;
-  width: 100vw;
+  top: -0.5rem;
+  left: 0.5vw;
+  width: 99vw;
   padding: 1rem 5vw 0 5vw;
+  margin: 0 auto;
   height: 8rem;
   background-color: rgba(128, 0, 128, 0.7);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 
   display: flex;
   justify-content: space-evenly;

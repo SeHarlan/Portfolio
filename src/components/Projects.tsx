@@ -8,9 +8,8 @@ export default class Projects extends Component {
   render() {
     return (
       <section className="project-page">
-        <img className="water-bg" src="/images/water-bg.jpg" alt="water background" />
         <Nav />
-        <div className="spacer"></div>
+        <img className="water-bg" src="/images/water-bg.jpg" alt="water background" />
         <HighlightedProjects />
         <ContactCard />
 

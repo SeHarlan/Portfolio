@@ -59,6 +59,12 @@ a {
   background: linear-gradient(to bottom, $bgcolor, $bgcolor2);
   height: 100vh;
 }
+//home image icon
+.home { 
+  img {
+    filter: brightness(0.9);
+  }
+}
 .home-header {
   
   display: flex;

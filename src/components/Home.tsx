@@ -9,7 +9,8 @@ import EntryMessage from './EntryMessage'
 
 export default class Home extends Component {
   state = {
-    greeting: ''
+    greeting: '',
+    entryBool: true,
   }
   componentDidMount() {
     let time = new Date().getHours()
@@ -18,7 +19,7 @@ export default class Home extends Component {
     if (time > 4) greeting = 'Good morning ';
     if (time > 11) greeting = 'Good afternoon ';
     if (time > 16) greeting = 'Good evening ';
-    this.setState({ greeting: greeting })
+    this.setState({ greeting: greeting})
   }
   getTitleImg() {
     const { greeting } = this.state

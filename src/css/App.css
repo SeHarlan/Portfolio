@@ -242,6 +242,10 @@ a {
   height: 100vh;
 }
 
+.home img {
+  filter: brightness(0.9);
+}
+
 .home-header {
   display: flex;
   flex-direction: column;

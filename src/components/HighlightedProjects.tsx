@@ -15,7 +15,7 @@ export default class HighlightedProjects extends Component {
       github="https://github.com/Shakespeare-Insult-Bot" 
       image="/images/shadespeare.png" 
       tech="Markov Chain / Twilio / Regex / Jest / Supertest / React / Node / MongoDB / Mongoose / Heroku"
-      body={`Using the markov-chains-text library, Shakespeare inspired "insults" were generated for our the "Shadespeare". With Twilio's calling and text to voice features you are able to send in Shadespeare to speak in a Zoom call. Scott lead the team in creating the chatbot, where regex was utilized to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`} 
+      body={`Using the markov-chains-text library, Shakespeare inspired insults were generated for the "Shadespeare" bot. With Twilio's calling and text to voice features you are able to send in Shadespeare to speak in a Zoom call. Scott lead the team in creating the chatbot, where regex was utilized to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`} 
       />
       
       <ProjectCard title="Alchimia"

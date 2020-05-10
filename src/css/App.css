@@ -263,6 +263,9 @@ a {
   height: auto;
   max-width: 180px;
 }
+.home-header .navigation-home h4 {
+  top: -70%;
+}
 .home-header .scott-harlan {
   width: 50vw;
   min-width: 350px;

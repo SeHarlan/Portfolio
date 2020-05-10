@@ -90,25 +90,25 @@
       position: relative;
       top: 27vh;
       left: -5vw;
-      @include shakeAnimation(-8, 8s);
+      @include shakeAnimation(-8, 10s);
     }
     .about {
       position: relative;
       top: 5vh;
       left: -15vw;
-      @include shakeAnimation(-4, 13s);
+      @include shakeAnimation(-4, 15s);
     }
     .projects{
       position: relative;
       top: 5vh;
       right: -15vw;
-      @include shakeAnimation(4, 17s);
+      @include shakeAnimation(4, 20s);
     }
     .contact {
       position: relative;
       top: 27vh;
       right: -5vw;
-      @include shakeAnimation(8, 23s);
+      @include shakeAnimation(8, 25s);
     }
 
   }
@@ -116,12 +116,12 @@
 .highlighted-projects {
   .project-div {
     div {
-      @include rotate(-5, -50px, 15px);
+      @include rotate(-5, -50px, 30px);
     }
   }
   .project-div-right {
     div {
-      @include rotate(5, -50px, 15px);
+      @include rotate(5, -50px, 30px);
     }
   }
 }

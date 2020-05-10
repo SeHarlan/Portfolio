@@ -1748,7 +1748,7 @@
   position: relative;
   top: 27vh;
   left: -5vw;
-  animation: shake-8 infinite ease-out 10s 8s alternate both;
+  animation: shake-8 infinite ease-out 10s 10s alternate both;
 }
 @-webkit-keyframes shake-8 {
   0% {
@@ -2050,7 +2050,7 @@
   position: relative;
   top: 5vh;
   left: -15vw;
-  animation: shake-4 infinite ease-out 10s 13s alternate both;
+  animation: shake-4 infinite ease-out 10s 15s alternate both;
 }
 @-webkit-keyframes shake-4 {
   0% {
@@ -2352,7 +2352,7 @@
   position: relative;
   top: 5vh;
   right: -15vw;
-  animation: shake4 infinite ease-out 10s 17s alternate both;
+  animation: shake4 infinite ease-out 10s 20s alternate both;
 }
 @-webkit-keyframes shake4 {
   0% {
@@ -2654,7 +2654,7 @@
   position: relative;
   top: 27vh;
   right: -5vw;
-  animation: shake8 infinite ease-out 10s 23s alternate both;
+  animation: shake8 infinite ease-out 10s 25s alternate both;
 }
 @-webkit-keyframes shake8 {
   0% {
@@ -2954,16 +2954,16 @@
 }
 
 .highlighted-projects .project-div div {
-  -webkit-transform: rotate(-5deg) translate(-50px, 15px);
-  -moz-transform: rotate(-5deg) translate(-50px, 15px);
-  -ms-transform: rotate(-5deg) translate(-50px, 15px);
-  transform: rotate(-5deg) translate(-50px, 15px);
+  -webkit-transform: rotate(-5deg) translate(-50px, 30px);
+  -moz-transform: rotate(-5deg) translate(-50px, 30px);
+  -ms-transform: rotate(-5deg) translate(-50px, 30px);
+  transform: rotate(-5deg) translate(-50px, 30px);
 }
 .highlighted-projects .project-div-right div {
-  -webkit-transform: rotate(5deg) translate(-50px, 15px);
-  -moz-transform: rotate(5deg) translate(-50px, 15px);
-  -ms-transform: rotate(5deg) translate(-50px, 15px);
-  transform: rotate(5deg) translate(-50px, 15px);
+  -webkit-transform: rotate(5deg) translate(-50px, 30px);
+  -moz-transform: rotate(5deg) translate(-50px, 30px);
+  -ms-transform: rotate(5deg) translate(-50px, 30px);
+  transform: rotate(5deg) translate(-50px, 30px);
 }
 
 .water-bg {

@@ -4,9 +4,20 @@
   background-color: rgba(128, 0, 128, 0.2);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
+  .entry-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    height: auto;
+    width: 20vw;
+    max-width: 300px;
+    min-width: 150px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  }
 }
 .Typist {
   z-index: 12;
@@ -20,7 +31,7 @@
     padding: 20vh 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 12;
     background-color: rgb(206, 36, 75);
@@ -32,10 +43,6 @@
     p {
       text-align: center;
       font-size: 2.5rem;
-    }
-    img {
-      width: 20vw;
-      max-width: 200px;
     }
   }
 }

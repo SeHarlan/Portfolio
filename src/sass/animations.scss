@@ -90,25 +90,25 @@
       position: relative;
       top: 27vh;
       left: -5vw;
-      @include shakeAnimation(-8, 0s);
+      @include shakeAnimation(-8, 8s);
     }
     .about {
       position: relative;
       top: 5vh;
       left: -15vw;
-      @include shakeAnimation(-4, 5s);
+      @include shakeAnimation(-4, 13s);
     }
     .projects{
       position: relative;
       top: 5vh;
       right: -15vw;
-      @include shakeAnimation(4, 10s);
+      @include shakeAnimation(4, 17s);
     }
     .contact {
       position: relative;
       top: 27vh;
       right: -5vw;
-      @include shakeAnimation(8, 15s);
+      @include shakeAnimation(8, 23s);
     }
 
   }
@@ -131,11 +131,14 @@
 .arrow-container {
   @include hover(normal);
   .left-arrow {
-    @include shakeAnimation(160, 20s)
+    @include shakeAnimation(160, 28s)
   }
   .right-arrow {
-    @include shakeAnimation(-160, 20s)
+    @include shakeAnimation(-160, 28s)
   }
+}
+.entry-image {
+  @include shakeAnimation(-10, -1s)
 }
 .project-div:hover, .project-div-right:hover {
   article {

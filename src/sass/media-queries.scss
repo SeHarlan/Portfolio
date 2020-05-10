@@ -1,4 +1,7 @@
 @media only screen and (max-width: 420px) {
+  #entry-text {
+    font-size: 2rem;
+  }
   .navigation {
     height: 4.6rem;
     top: -0.5rem;
@@ -186,12 +189,11 @@
 }
 
 @media only screen and (orientation: landscape) and (max-height: 420px) {
-  .Typist {
-    div {
-      p {
-        font-size: 1.5rem;
-      }
-    }
+  #entry-text {
+    font-size: 2rem;
+  }
+  .entry-image {
+    margin-left: -1rem;
   }
   .navigation {
     height: 4.6rem;

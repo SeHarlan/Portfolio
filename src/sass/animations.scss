@@ -73,16 +73,16 @@
   } 
   .navigation {
     .home {
-      @include shakeAnimation(0, 0s);
-    }
-    .about {
-      @include shakeAnimation(0, 5s);
-    }
-    .projects{
       @include shakeAnimation(0, 10s);
     }
-    .contact {
+    .about {
       @include shakeAnimation(0, 15s);
+    }
+    .projects{
+      @include shakeAnimation(0, 20s);
+    }
+    .contact {
+      @include shakeAnimation(0, 25s);
     }
   }
   .navigation-home {
@@ -116,12 +116,12 @@
 .highlighted-projects {
   .project-div {
     div {
-      @include rotate(-5, -50px, 30px);
+      @include rotate(-5, -50px, 12px);
     }
   }
   .project-div-right {
     div {
-      @include rotate(5, -50px, 30px);
+      @include rotate(5, -50px, 12px);
     }
   }
 }
@@ -131,10 +131,10 @@
 .arrow-container {
   @include hover(normal);
   .left-arrow {
-    @include shakeAnimation(160, 28s)
+    @include shakeAnimation(160, 30s)
   }
   .right-arrow {
-    @include shakeAnimation(-160, 28s)
+    @include shakeAnimation(-160, 30s)
   }
 }
 .entry-image {

@@ -170,6 +170,13 @@
   }
 }
 @media only screen and (orientation: landscape) and (max-height: 420px) {
+  .Typist div p {
+    font-size: 1.5rem;
+  }
+  .Typist div img {
+    width: 100px;
+  }
+
   .navigation {
     height: 4.6rem;
   }

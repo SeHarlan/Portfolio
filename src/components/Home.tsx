@@ -5,18 +5,19 @@ import ContactCard from './ContactCard'
 import AboutCard from './AboutCard'
 import HighlightedProjects from './HighlightedProjects'
 import Arrows from './Arrows'
+import EntryMessage from './EntryMessage'
 
 export default class Home extends Component {
   state = {
-    greeting: 'Hello, '
+    greeting: ''
   }
   componentDidMount() {
     let time = new Date().getHours()
-    time += 0
-    let greeting = 'Hello, '
-    if (time > 4) greeting = 'Good Morning ';
-    if (time > 11) greeting = 'Good Afternoon, ';
-    if (time > 16) greeting = 'Good Evening, ';
+    // time += -10;
+    let greeting = 'Hello '
+    if (time > 4) greeting = 'Good morning ';
+    if (time > 11) greeting = 'Good afternoon ';
+    if (time > 16) greeting = 'Good evening ';
     this.setState({ greeting: greeting })
   }
   getTitleImg() {
@@ -26,8 +27,10 @@ export default class Home extends Component {
     return "/images/Scott-Harlan.png"
   }
   render() {
+    const {greeting } = this.state
     return (
       <section>
+        {greeting && <EntryMessage greeting={greeting} />}
         <header className="home-header">
           <Nav home={true}/>
           <Waves />

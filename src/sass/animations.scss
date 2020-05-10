@@ -150,6 +150,11 @@
   @include scale(0.9);
   filter: drop-shadow(0 0);
 }
+.navigation-home .home:active, .navigation-home .about:active, .navigation-home .projects:active, .navigation-home .contact:active {
+    @include stopAnimation();
+    @include scale(0.9);
+    filter: drop-shadow(0 0);
+  }
 .project-div:hover, .project-div-right:hover {
   aside {
     display: block;

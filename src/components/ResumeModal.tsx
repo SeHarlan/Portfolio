@@ -30,7 +30,7 @@ export default function ResumeModal({page}: {page?: boolean}) {
   return (
     <div className="modal-div">
       <div className="resume-button-container">
-        {page && (<label htmlFor="resume"><h2>View Scott's Resume</h2></label>)}
+        {page && (<label htmlFor="resume"><h2>View My Resume</h2></label>)}
         <button className="resume" id="resume" onClick={openModal}>
           <img src={resumeIcon} alt="resume" />
         </button>

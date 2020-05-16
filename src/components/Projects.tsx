@@ -20,7 +20,7 @@ export default class Projects extends Component {
           <ProjectCard title="Data Structures..."
           github="https://github.com/SeHarlan/data-structures-and-algorithms"
           tech="Javascript"
-          body="A series of whiteboard challenges including Linked Lists, Binary Trees, and Stacks and Queues (see branches)"
+          body="A select series of whiteboard challenges I've completed including Linked Lists, Binary Trees, and Stacks and Queues (see branches)"
           />
           <ProjectCard title="Unripe-Banana"
           right={true}

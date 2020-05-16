@@ -24,7 +24,7 @@ const EntryMessage = ({greeting}) => {
     <section className="entry-container" style={{opacity: opacity, display: display}}>
       <Typist >
         <div >
-        <p id="entry-text">{greeting} and welcome to the personal portfolio of Scott Harlan. We hope you enjoy your visit!</p>
+        <p id="entry-text">{greeting} and welcome to my personal portfolio. I hope you enjoy your visit!</p>
         </div>
       </Typist>
       <img className="entry-image" src="/images/vapor-palm.png" alt="palm tree"/>

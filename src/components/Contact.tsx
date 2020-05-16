@@ -27,7 +27,7 @@ export default class Contact extends Component {
               </a>
 
               <a className="email" href="mailto:seharlan@gmail.com" target="_blank" rel="noopener noreferrer">
-                <h2>Send Scott An Email</h2>
+                <h2>Send Me An Email</h2>
                 <img src="/images/email-icon.png" alt="email" />
               </a>
               <ResumeModal page={true}/> 

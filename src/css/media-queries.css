@@ -124,7 +124,7 @@
     margin: 1rem;
   }
   .about-page article {
-    margin: -0.3rem auto;
+    margin: 0 auto;
     padding: 0.5rem 1.2rem;
     width: 95%;
   }
@@ -173,7 +173,7 @@
     width: 90%;
   }
 }
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 750px) and (min-width: 420px) {
   .home-header p {
     display: none;
   }

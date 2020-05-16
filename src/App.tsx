@@ -14,7 +14,9 @@ import EntryMessgaeProvider from './hooks/EntryMessageProvider';
 
 export default class App extends Component {
   componentDidMount() {
-    window.scrollTo(0, 1)
+    /mobile/i.test(navigator.userAgent) && setTimeout(() => {
+      window.scrollTo(0, 1)
+    }, 1000)
   }
   render() {
     return (

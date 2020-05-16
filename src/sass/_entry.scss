@@ -24,14 +24,17 @@
     bottom: 1rem;
     right: 1rem;
 
-    height: 1.5rem;
-    width: 2rem;
+    height: 2rem;
+    width: 2.5rem;
     background-color: rgba(255, 192, 203, 0.7);
     border: 2px dotted purple;
     border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1rem;
     text-align: center;
 

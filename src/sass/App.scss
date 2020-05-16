@@ -246,22 +246,27 @@ a {
     width: 50px;
   }
 }
-.resume {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.resumeImage {
-  height: 80vh;
-}
-.modal-button {
-  font-family: $body-font;
-  font-size: 1em;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
+
+  .resume {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .resumeImage {
+    height: 80vh;
+  }
+  .modal-button {
+    font-family: $body-font;
+    font-size: 1em;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  .ReactModal__Overlay {
+    z-index: 5;
+  }
+
 .grid {
   width: 100vw;
   max-height: 40vh;
@@ -278,14 +283,6 @@ a {
   position: fixed;
   left: 0;
   top: 0
-}
-.ReactModal__Overlay {
-  z-index: 5;
-}
-.spacer {
-  height: 20vh;
-  margin: 0;
-  padding: 0;
 }
 .arrow-container {
   position: absolute;

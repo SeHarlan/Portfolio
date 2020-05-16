@@ -14,6 +14,10 @@ const EntryMessage = ({greeting}) => {
     setTimeout(() => setDisplay('none'), 13000)
     setTimeout(() => setEntryBool(false), 15000)
   }, [setEntryBool])
+  const handleClick = () => {
+    console.log('clicke')
+    setEntryBool(false)
+  }
   
   if(!entryBool) return <></>
   return (
@@ -24,6 +28,7 @@ const EntryMessage = ({greeting}) => {
         </div>
       </Typist>
       <img className="entry-image" src="/images/vapor-palm.png" alt="palm tree"/>
+      <button className="entry-button" onClick={handleClick}>X</button>
     </section>
   )
 };

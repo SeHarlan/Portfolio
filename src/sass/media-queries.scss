@@ -187,6 +187,13 @@
     width: 90%;
   }
 }
+@media only screen and (max-height: 750px) {
+  .home-header {
+    p {
+      display: none;
+    }
+  }
+}
 
 @media only screen and (orientation: landscape) and (max-height: 420px) {
   #entry-text {

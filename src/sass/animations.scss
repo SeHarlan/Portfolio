@@ -145,10 +145,10 @@
     opacity: 1;
   }
 }
-.home:hover, .about:hover, .projects:hover, .contact:hover, .linkedin:hover, .github:hover, .email:hover, .resume-button-container:hover, .modal-button:hover {
+.home:hover, .about:hover, .projects:hover, .contact:hover, .linkedin:hover, .github:hover, .email:hover, .resume-button-container:hover, .entry-button:hover, .modal-button:hover {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
-.home:active, .about:active, .projects:active, .contact:active, .linkedin:active, .github:active, .email:active, .resume-button-container:active, .modal-button:active {
+.home:active, .about:active, .projects:active, .contact:active, .linkedin:active, .github:active, .email:active, .resume-button-container:active, .modal-button:active, .entry-button:active {
   @include stopAnimation();
   @include scale(0.9);
   filter: drop-shadow(0 0);

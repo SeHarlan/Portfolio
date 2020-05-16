@@ -13,7 +13,9 @@ import Contact from './components/Contact'
 import EntryMessgaeProvider from './hooks/EntryMessageProvider';
 
 export default class App extends Component {
-  
+  componentDidMount() {
+    window.scrollTo(0, 1)
+  }
   render() {
     return (
       <Router>

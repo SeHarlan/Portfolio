@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { useRef, useEffect } from 'react'
 import Nav from './Nav'
 import Waves from './Waves'
 import ResumeModal from './ResumeModal'
 
-export default function Contact {
+export default function Contact() {
   
   const scrollInto = useRef(null)
   useEffect(() => {

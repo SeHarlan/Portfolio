@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './css/App.css';
 import './css/animations.css'
 import './css/media-queries.css';

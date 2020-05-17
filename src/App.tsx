@@ -16,7 +16,7 @@ export default function App() {
 
   useEffect(() => {
     /mobile/i.test(navigator.userAgent) && setTimeout(() => {
-          window.scrollTo(0, 5)
+          window.scrollTo(0, 48)
         }, 1000)
   }, [])
   return (

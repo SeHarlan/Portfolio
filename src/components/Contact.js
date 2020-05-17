@@ -3,10 +3,14 @@ import Nav from './Nav'
 import Waves from './Waves'
 import ResumeModal from './ResumeModal'
 
-export default class Contact extends Component {
-  render() {
+export default function Contact {
+  
+  const scrollInto = useRef(null)
+  useEffect(() => {
+    scrollInto.current.scrollIntoView()
+  })
     return (
-      <section className="contact-page">
+      <section ref={scrollInto} className="contact-page">
         <Nav />
         <header className="contact-header">
 
@@ -38,5 +42,5 @@ export default class Contact extends Component {
           <img className="grid" src="/images/grid.png" alt="grid" />
       </section>
     )
-  }
+  
 }

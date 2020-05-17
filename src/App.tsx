@@ -14,13 +14,9 @@ import EntryMessgaeProvider from './hooks/EntryMessageProvider';
 
 export default function App() {
 
-  const scrollInto = useRef(null)
-  useEffect(() => {
-    scrollInto.current.scrollIntoView()
-  })
   return (
     <Router >
-      <EntryMessgaeProvider ref={scrollInto}>
+      <EntryMessgaeProvider >
         <Route exact path='/' component={Home} />
       </EntryMessgaeProvider>
       <Route exact path='/about' component={About} />

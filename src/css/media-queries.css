@@ -177,6 +177,27 @@
   .home-header p {
     display: none;
   }
+
+  .contact-page section {
+    top: 45vh;
+    width: 90vw;
+    left: 5vw;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .contact-page section a, .contact-page section .resume-button-container {
+    width: 38vw;
+    margin: 1rem;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-page section a h2, .contact-page section .resume-button-container h2 {
+    font-size: 1.5rem;
+  }
+  .contact-page section a img, .contact-page section .resume-button-container img {
+    width: 70px;
+  }
 }
 @media only screen and (orientation: landscape) and (max-height: 420px) {
   #entry-text {

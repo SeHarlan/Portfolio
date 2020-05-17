@@ -193,6 +193,28 @@
       display: none;
     }
   }
+  .contact-page {
+    section {
+      top: 45vh;
+      width: 90vw;
+      left: 5vw; 
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      a, .resume-button-container {
+        width: 38vw;
+        margin: 1rem;
+        grid-template-columns: 2fr 1fr;
+        h2 {
+          font-size: 1.5rem;
+        }
+        img {
+          width: 70px
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-height: 420px) {

@@ -10,11 +10,11 @@ export default function Contact() {
     scrollInto.current.scrollIntoView()
   })
     return (
-      <section ref={scrollInto} className="contact-page">
+      <section className="contact-page">
         <Nav />
         <header className="contact-header">
 
-          <div>
+          <div ref={scrollInto}>
             <img src="/images/computor.gif" alt="computer" />
             <h1>Contact Information</h1>
           </div>

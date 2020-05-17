@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './css/App.css';
 import './css/animations.css'
 import './css/media-queries.css';
@@ -14,14 +14,13 @@ import EntryMessgaeProvider from './hooks/EntryMessageProvider';
 
 export default function App() {
 
+  const scrollInto = useRef(null)
   useEffect(() => {
-    /mobile/i.test(navigator.userAgent) && setTimeout(() => {
-          window.scrollTo(0, 48)
-        }, 1000)
-  }, [])
+    scrollInto.current.scrollIntoView()
+  })
   return (
-    <Router>
-      <EntryMessgaeProvider>
+    <Router >
+      <EntryMessgaeProvider ref={scrollInto}>
         <Route exact path='/' component={Home} />
       </EntryMessgaeProvider>
       <Route exact path='/about' component={About} />

@@ -5,16 +5,12 @@ import ResumeModal from './ResumeModal'
 
 export default function Contact() {
   
-  const scrollInto = useRef(null)
-  useEffect(() => {
-    scrollInto.current.scrollIntoView()
-  })
     return (
       <section className="contact-page">
         <Nav />
         <header className="contact-header">
 
-          <div ref={scrollInto}>
+          <div>
             <img src="/images/computor.gif" alt="computer" />
             <h1>Contact Information</h1>
           </div>

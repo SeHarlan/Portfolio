@@ -10,7 +10,16 @@ export default class HighlightedProjects extends Component {
       </header>
       <h5>~ Sites hosted with Heroku may take a moment to wake up ~</h5>
 
+      <ProjectCard title="Going Viral" 
+      site="https://goingviral.netlify.app" 
+      github="https://github.com/Going-Viral" 
+      image="/images/going-viral.png" 
+      tech="D3 / Material-UI / Jest / Supertest / Redux / React / Node / MongoDB / Mongoose / Heroku / Netlify"
+      body={`In a ten day sprint my team and I learned D3 from scratch and fused that with our knowledge of React, Redux and MongoDB to create "Going Viral, Pandemic-Related Mobility Metrics". Our data sources included Global Mobility Reports from Google and Global COVID Case data sourced from Bing. My personal focus was munging geoJSON with the Global Mobility Reports and utilizing D3 alongside React to create the interactive choropleth globe. I also guided the architecture of our global state and contributed to the comparison line graphs for mobility metrics between different countries and subregions, and the stacked bar chart for viewing total and daily COVID case numbers.`} 
+      />
+
       <ProjectCard title="Shadespeare" 
+      right={true}
       site="https://shadespeare-insults.herokuapp.com" 
       github="https://github.com/Shakespeare-Insult-Bot" 
       image="/images/shadespeare.png" 
@@ -19,7 +28,6 @@ export default class HighlightedProjects extends Component {
       />
       
       <ProjectCard title="Alchimia"
-      right={true}
       site="https://alchimia-by-the-meeps.github.io/alchimia/"
       github="https://github.com/Alchimia-by-the-meeps/alchimia"
       image="/images/alchimia.png"
@@ -28,10 +36,11 @@ export default class HighlightedProjects extends Component {
       />
 
       <ProjectCard title="Mosaic"
+      right={true}
       site="https://the-mosaic.herokuapp.com/"
       github="https://github.com/mosaic-api"
       image="/images/mosaic.png"
-      tech="Color API / Web Audio API / Material UI / Jest / Supertest / Superagent / React / Node / SQL / Heroku"
+      tech="Color API / Web Audio API / Material-UI / Jest / Supertest / Superagent / React / Node / SQL / Heroku"
       body="In this Full Stack App, I lead the team in using the Color API to create cohesive color palettes the user could choose from to create their own digital mosaic. Each colored tile is accompanied by a correlated musical note generated with Web Audio API. we utilized SQL as our persistance layer so the user can pull back saved mosaics for future modification and listen to the music generated from the mosaics they have built."
       />
     </div>

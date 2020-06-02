@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {useScreenDimensions} from '../hooks/useScreenDimensions'
 import vaporPalm from '../assets/vapor-palm.png'
+import statue from '../assets/statue.png'
 
 const Nav = ({home = false}: {home?: boolean}) => {
 
@@ -16,7 +17,7 @@ const Nav = ({home = false}: {home?: boolean}) => {
         <h4>Home</h4>
       </Link>
       <Link className="about" to='/about'>
-        <img src="/images/statue.png" alt="about" />
+        <img src={statue} alt="about" />
         <h4>About</h4>
       </Link>
       <Link className="projects" to='/projects'>

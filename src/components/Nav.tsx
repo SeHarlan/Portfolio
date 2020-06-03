@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import {useScreenDimensions} from '../hooks/useScreenDimensions'
 import vaporPalm from '../assets/vapor-palm.png'
 import statue from '../assets/statue.png'
+import gameboy from '../assets/gameboy.png'
+import computor from '../assets/computor.png'
 
 const Nav = ({home = false}: {home?: boolean}) => {
 
@@ -21,11 +23,11 @@ const Nav = ({home = false}: {home?: boolean}) => {
         <h4>About</h4>
       </Link>
       <Link className="projects" to='/projects'>
-        <img src="/images/gameboy.png" alt="projects" />
+        <img src={gameboy} alt="projects" />
         <h4>Projects</h4>
       </Link>
       <Link className="contact" to='/contact'>
-        <img src="/images/computor.png" alt="contact" />
+        <img src={computor} alt="contact" />
         <h4>Contact</h4>
       </Link>
     </div>

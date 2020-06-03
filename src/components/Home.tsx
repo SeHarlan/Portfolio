@@ -7,6 +7,12 @@ import HighlightedProjects from './HighlightedProjects'
 import Arrows from './Arrows'
 import EntryMessage from './EntryMessage'
 
+import scottSunLogo from '../assets/Scott-Harlan.png'
+import scottMoonLogo from '../assets/scott-moon.png'
+import scottSaturnLogo from '../assets/scott-saturn.png'
+import grid from '../assets/grid.png'
+import waterBG from '../assets/water-bg.jpg'
+
 export default class Home extends Component {
   state = {
     greeting: '',
@@ -14,7 +20,7 @@ export default class Home extends Component {
   }
   componentDidMount() {
     let time = new Date().getHours()
-    // time += -10;
+    // time += -16;
     let greeting = 'Hello '
     if (time > 4) greeting = 'Good morning ';
     if (time > 11) greeting = 'Good afternoon ';
@@ -23,9 +29,9 @@ export default class Home extends Component {
   }
   getTitleImg() {
     const { greeting } = this.state
-    if (greeting === 'Hello, ') return "/images/scott-saturn.png";
-    if (greeting === 'Good Evening, ') return "/images/scott-moon.png";
-    return "/images/Scott-Harlan.png"
+    if (greeting === 'Hello ') return scottSaturnLogo;
+    if (greeting === 'Good evening ') return scottMoonLogo;
+    return scottSunLogo
   }
   render() {
     const {greeting } = this.state
@@ -38,12 +44,12 @@ export default class Home extends Component {
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
           <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
           {/* <p>Still In Development</p> */}
-          <img className="grid" src="/images/grid.png" alt="grid" />
+          <img className="grid" src={grid} alt="grid" />
           <Arrows />
         </header>
 
         <section>
-          <img className="water-bg" src="/images/water-bg.jpg" alt="water background" />
+          <img className="water-bg" src={waterBG} alt="water background" />
 
           <AboutCard />
 

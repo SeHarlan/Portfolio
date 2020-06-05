@@ -1,7 +1,6 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import Nav from './Nav'
 import Waves from './Waves'
-import ResumeModal from './ResumeModal'
 import grid from '../assets/grid.png'
 import linkedIn from '../assets/linkedin-icon.png'
 import github from '../assets/github-icon.png'

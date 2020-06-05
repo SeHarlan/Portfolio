@@ -222,6 +222,16 @@
     height: 3.5rem;
   }
 
+  .contact-card header h1 {
+    font-size: 1.5rem;
+  }
+  .contact-card header img {
+    width: 60px;
+  }
+  .contact-card img {
+    width: 40px;
+  }
+
   .home-header p {
     display: none;
   }
@@ -236,7 +246,10 @@
 
   .about-card {
     max-height: 80vh !important;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .about-card img {
+    width: 100px;
   }
 
   .highlighted-projects {

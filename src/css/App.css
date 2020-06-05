@@ -53,6 +53,10 @@
   text-align: center;
   text-decoration: underline;
 }
+.about-page .about-header .arrow-container {
+  width: 100%;
+  padding: 0 10vw;
+}
 .about-page .about-card {
   position: absolute;
   top: 35vh;

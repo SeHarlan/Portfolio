@@ -34,8 +34,6 @@ export default function Contact() {
                 <h2>Send Me An Email</h2>
                 <img src={email} alt="email" />
               </a>
-              <ResumeModal page={true}/> 
-
           </section>
           
           <Waves />

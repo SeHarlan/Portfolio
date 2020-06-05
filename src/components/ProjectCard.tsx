@@ -1,7 +1,8 @@
 import React from 'react'
 import { useScreenDimensions } from '../hooks/useScreenDimensions'
+import jsIcon from '../assets/js-icon.png'
 
-const ProjectCard = ({right = false, title, site, github, image = "/images/node-logo.png", tech, body}: {right?: boolean, title: string, site?: string, github: string, image?: string, tech: string, body: string}) => {
+const ProjectCard = ({right = false, title, site, github, image = jsIcon, tech, body}: {right?: boolean, title: string, site?: string, github: string, image?: string, tech: string, body: string}) => {
 
   const {width} = useScreenDimensions()
   const className: string = (right ? "project-div-right" : "project-div")

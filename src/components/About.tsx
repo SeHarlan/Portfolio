@@ -4,6 +4,7 @@ import AboutCard from './AboutCard'
 import ContactCard from './ContactCard'
 import Waves from './Waves'
 import Arrows from './Arrows'
+import grid from '../assets/grid.png'
 
 export default class About extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class About extends Component {
           <Waves />
           <h1>About Me</h1>
           <AboutCard />
-          <img className="grid" src="/images/grid.png" alt="grid" />
+          <img className="grid" src={grid} alt="grid" />
           <Arrows />
         </header>
         <article>

@@ -1,6 +1,7 @@
 import React, {useState, useEffect}from 'react';
 import Typist from 'react-typist';
 import { useGlobal } from '../hooks/EntryMessageProvider';
+import vaporPalm from '../assets/vapor-palm.png'
 
 //Thank you react-typist for the typing animation!
 
@@ -27,7 +28,7 @@ const EntryMessage = ({greeting}) => {
         <p id="entry-text">{greeting} and welcome to my personal portfolio. I hope you enjoy your visit!</p>
         </div>
       </Typist>
-      <img className="entry-image" src="/images/vapor-palm.png" alt="palm tree"/>
+      <img className="entry-image" src={vaporPalm} alt="palm tree"/>
       <button className="entry-button" onClick={handleClick}>X</button>
     </section>
   )

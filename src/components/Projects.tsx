@@ -3,13 +3,14 @@ import Nav from './Nav'
 import HighlightedProjects from './HighlightedProjects'
 import ContactCard from './ContactCard'
 import ProjectCard from './ProjectCard'
+import waterBg from '../assets/water-bg.jpg'
 
 export default class Projects extends Component {
   render() {
     return (
       <section className="project-page">
         <Nav />
-        <img className="water-bg" src="/images/water-bg.jpg" alt="water background" />
+        <img className="water-bg" src={waterBg} alt="water background" />
         <HighlightedProjects />
         <ContactCard />
 

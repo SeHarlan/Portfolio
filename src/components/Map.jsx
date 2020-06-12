@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { select, geoPath, geoOrthographic, scaleSequential, event, drag, min, max, interpolateRainbow, interpolateWarm } from 'd3';
+import { select, geoPath, geoOrthographic, scaleSequential, event, drag, min, max, interpolateRainbow, interpolateWarm} from 'd3';
 import { useResizeObserver } from '../hooks/d3Hooks';
 
 import mapData from '../data/World-map-lo-res.geo.json'
@@ -150,7 +150,7 @@ const Map = () => {
         { !mapData.features 
           ? <CircularProgress /> 
           : (<> 
-            {!clicked && <h3 variant="body1" className='dragLabel'>Click and drag to rotate</h3>}
+            {!clicked && <aside className='dragLabel'>Click and drag to rotate</aside>}
             <svg ref={svgRef} className='svgStyle'></svg>
           </>)
         }

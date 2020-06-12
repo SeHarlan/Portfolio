@@ -6,6 +6,7 @@ import AboutCard from './AboutCard'
 import HighlightedProjects from './HighlightedProjects'
 import Arrows from './Arrows'
 import EntryMessage from './EntryMessage'
+import Map from './Map'
 
 import scottSunLogo from '../assets/Scott-Harlan.png'
 import scottMoonLogo from '../assets/scott-moon.png'
@@ -41,7 +42,8 @@ export default class Home extends Component {
         <header className="home-header">
           <Nav home={true}/>
           <Waves />
-          <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
+          {/* <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" /> */}
+          <Map />
           <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
           {/* <p>Still In Development</p> */}
           <img className="grid" src={grid} alt="grid" />

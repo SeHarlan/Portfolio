@@ -6,6 +6,13 @@ import mapData from '../data/World-map-lo-res.geo.json'
 
 import { CircularProgress } from '@material-ui/core'; 
 
+
+
+//NOTE: currently not in use
+
+
+
+
 // const mapData = {  
 //   "type": "FeatureCollection",
 // "features": map.features.map(country => ({

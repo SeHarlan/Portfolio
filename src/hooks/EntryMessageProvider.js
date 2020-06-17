@@ -1,5 +1,7 @@
 import React, { createContext, useState, useContext } from 'react';
 
+// Global state to keep track of the intro/ entry message so that it is only viewed once
+
 const MessageContext = createContext({})
 
 const EntryMessgaeProvider = ({children}) => {

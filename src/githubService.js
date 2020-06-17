@@ -1,3 +1,6 @@
+//NOTE: currently not in use
+//!!!WARNING: this will cause a request overload to the github API
+
 export const getGithubCommits = async() => {
   const repos = await fetch('https://api.github.com/users/SeHarlan/repos')
     .then(res => res.json())

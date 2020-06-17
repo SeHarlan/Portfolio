@@ -2,6 +2,9 @@ import React from 'react';
 import Modal from 'react-modal';
 import resumeIcon from '../assets/resume-icon.png'
 
+
+// NOTE: Currently not in use, probably will be removed
+
 const customStyles = {
   content: {
     top: '50%',

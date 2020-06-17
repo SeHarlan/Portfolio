@@ -7,6 +7,8 @@ const ProjectCard = ({right = false, title, site, github, image = jsIcon, tech, 
   const {width} = useScreenDimensions()
   const className: string = (right ? "project-div-right" : "project-div")
 
+  
+  // "right" boolean is used to determine which side the image is placed
   return (
   <div className={className}>
     {right && (<article>

@@ -42,10 +42,9 @@ export default class Home extends Component {
         <header className="home-header">
           <Nav home={true}/>
           <Waves />
-          {/* <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" /> */}
-          <Map />
-          <p>"A Full Stack Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
-          {/* <p>Still In Development</p> */}
+          <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
+          {/* <Map /> */}
+          <p>"A Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
           <img className="grid" src={grid} alt="grid" />
           <Arrows />
         </header>

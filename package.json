@@ -25,7 +25,8 @@
     "resize-observer-polyfill": "^1.5.1",
     "simplex-noise": "^2.4.0",
     "typescript": "^3.8.3",
-    "victor": "^1.1.0"
+    "victor": "^1.1.0",
+    "websocket-extensions": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

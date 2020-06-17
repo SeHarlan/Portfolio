@@ -4,6 +4,9 @@
 @use 'entry';
 @use 'Map';
 
+// TO DO: much of this needs to be separated into modules
+// TO DO: add more classes so I can remove these deep layers of nesting
+
 $bgcolor: rgba(255, 95, 204, 0.3);
 $bgcolor2: rgb(172, 0, 187);
 $font-color: rgba(255, 235, 205, 0.9);

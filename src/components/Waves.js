@@ -3,6 +3,7 @@ const SimplexNoise = require('simplex-noise')
 const Victor = require('victor')
 
 //A huge thank you to Tadas Karpavičius for creating this amazing code/art (@trajektorijus on CodePen)
+//this is code that I modified but relied heavily on existing code from Tadas in their CodePen project and would not be possible without them.
 
 export default class Contact extends Component {
   componentDidMount() {

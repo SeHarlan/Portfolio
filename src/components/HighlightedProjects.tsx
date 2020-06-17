@@ -45,7 +45,7 @@ export default class HighlightedProjects extends Component {
       github="https://github.com/mosaic-api"
       image={mosaic}
       tech="Color API / Web Audio API / Material-UI / Jest / Supertest / Superagent / React / Node / SQL / Heroku"
-      body="In this Full Stack App, I lead the team in using the Color API to create cohesive color palettes the user could choose from to create their own digital mosaic. Each colored tile is accompanied by a correlated musical note generated with Web Audio API. we utilized SQL as our persistance layer so the user can pull back saved mosaics for future modification and listen to the music generated from the mosaics they have built."
+      body="In this Full Stack App, I lead the team in using the Color API to create cohesive color palettes the user could choose from to create their own digital mosaic. Each colored tile is accompanied by a correlated musical note generated with Web Audio API. we utilized SQL as our persistence layer so the user can pull back saved mosaics for future modification and listen to the music generated from the mosaics they have built."
       />
     </div>
   }

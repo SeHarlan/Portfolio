@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getGithubCommits } from '../githubService';
 
+//NOTE: Currently not in use
+
 const GithubGraph = () => {
   
   const [commits, setCommits] = useState([{total: 0, week: 0}])

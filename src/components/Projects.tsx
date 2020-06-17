@@ -4,7 +4,6 @@ import HighlightedProjects from './HighlightedProjects'
 import ContactCard from './ContactCard'
 import ProjectCard from './ProjectCard'
 import waterBg from '../assets/water-bg.jpg'
-// import GithubGraph from './GithubGraph'
 
 export default class Projects extends Component {
   render() {
@@ -13,7 +12,6 @@ export default class Projects extends Component {
         <Nav />
         <img className="water-bg" src={waterBg} alt="water background" />
         <HighlightedProjects />
-        {/* <GithubGraph /> */}
         <ContactCard />
 
         <div className="highlighted-projects">

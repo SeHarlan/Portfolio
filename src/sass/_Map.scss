@@ -1,0 +1,44 @@
+// currently not in use
+.Map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  
+  .svgStyle {
+    position: relative;
+    top: -1em;
+    background-color: none;
+    display: block;
+    width: auto;
+    height: 50vh;
+    overflow: visible;
+    circle:hover {
+      cursor: grab;
+    }
+    path {
+      stroke: rgba(159, 142, 160, 0.1);
+    }
+    path:hover {
+      stroke: rgba(0, 0, 0, 0.3);
+      stroke-width: 0.7px;
+      cursor: pointer;
+    }
+    circle:active {
+      cursor: grabbing;
+    }
+    path:active {
+      cursor: grabbing;
+    }
+  }
+  .dragLabel {
+    position: absolute;
+    z-index: 5;
+
+    padding: 1rem;
+    border: 2px dotted rgba(128, 0, 128, 0.4);
+    border-radius: 0.5rem;
+    background-color: rgba(240, 240, 240, 0.1);
+  }
+}

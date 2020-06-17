@@ -214,6 +214,48 @@
   font-size: 2.5rem;
 }
 
+.Map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.Map .svgStyle {
+  position: relative;
+  top: -1em;
+  background-color: none;
+  display: block;
+  width: auto;
+  height: 50vh;
+  overflow: visible;
+}
+.Map .svgStyle circle:hover {
+  cursor: grab;
+}
+.Map .svgStyle path {
+  stroke: rgba(159, 142, 160, 0.1);
+}
+.Map .svgStyle path:hover {
+  stroke: rgba(0, 0, 0, 0.3);
+  stroke-width: 0.7px;
+  cursor: pointer;
+}
+.Map .svgStyle circle:active {
+  cursor: grabbing;
+}
+.Map .svgStyle path:active {
+  cursor: grabbing;
+}
+.Map .dragLabel {
+  position: absolute;
+  z-index: 5;
+  padding: 1rem;
+  border: 2px dotted rgba(128, 0, 128, 0.4);
+  border-radius: 0.5rem;
+  background-color: rgba(240, 240, 240, 0.1);
+}
+
 .contact-card, .about-card {
   background-color: rgba(255, 95, 204, 0.3);
   z-index: 3;

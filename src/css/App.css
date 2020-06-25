@@ -460,6 +460,9 @@ a {
 .project-page .more-projects {
   margin: 0;
 }
+.project-page .long-name {
+  font-size: 1.5rem !important;
+}
 
 .contact-card {
   margin: 0.5rem;

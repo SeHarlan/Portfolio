@@ -22,13 +22,13 @@ export default class HighlightedProjects extends Component {
         tech="D3 / Material-UI / Jest / Supertest / Redux / React / Node / MongoDB / Mongoose / Heroku / Netlify"
         body={`In a ten day sprint my team and I learned D3 from scratch and fused that with our knowledge of React, Redux and MongoDB to create "Going Viral, Pandemic-Related Mobility Metrics". Our data sources included Global Mobility Reports from Google and Global COVID Case data sourced from Bing. My personal focus was munging geoJSON with the Global Mobility Reports and utilizing D3 alongside React to create the interactive choropleth globe. I also guided the architecture of our global state and contributed to the comparison line graphs for mobility metrics between different countries and subregions, and the stacked bar chart for viewing total and daily COVID case numbers.`}
       />
-      <ProjectCard title="Hards Against Humanity"
+      <ProjectCard title="Hards Against Cumanity"
         right={true}
         site="https://hards-against-cumanity.herokuapp.com/"
         github="https://github.com/SeHarlan/hards-against-cumanity"
         image={hac}
         tech="Next / socket.io / React / Node / Heroku"
-        body={`For this solo project I learned socket.io and the Next.js framework. Using these technologies, along with my experience In React and Node I created an online version of the card game Cards Against Humanity. Socket.io allows for bi-directional communication between web clients and servers. This makes for a seamless interaction between players. In addition to dynamic pages and routing, Next.js allowed me to pre-render the application server-side for faster performance and better SEO.`}
+        body={`For this solo project I learned socket.io and the Next.js framework. Using these technologies, along with my experience in React and Node I created an online version of the card game Cards Against Humanity. Socket.io allows for bi-directional communication between web clients and servers. This makes for a seamless interaction between players. In addition to dynamic pages and routing, Next.js allowed me to pre-render the application server-side for faster performance and better SEO.`}
       />
 
       <ProjectCard title="Shadespeare"

@@ -10,7 +10,7 @@ export default class HighlightedProjects extends Component {
   render() {
     return <div className="highlighted-projects">
       <header>
-        <h1>Projects</h1>
+        <h1>Highlighted Projects</h1>
         <img src="/images/gameboy.gif" alt="gameboy" />
       </header>
       <h5>~ Sites hosted with Heroku may take a moment to wake up ~</h5>

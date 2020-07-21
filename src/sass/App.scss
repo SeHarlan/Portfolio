@@ -306,6 +306,10 @@ a {
     filter: brightness(0.75);
   }
 }
+
+a:active {
+  color: inherit;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

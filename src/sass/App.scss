@@ -117,8 +117,7 @@ a {
   @extend %card;
   font-family: $other-font;
   margin-top: 0;
-  max-height: 45vh;
-  overflow: scroll;
+  // max-height: 45vh;
   overflow-x: hidden;
   img {
     float: left;
@@ -306,10 +305,24 @@ a {
     filter: brightness(0.75);
   }
 }
-
+a {
+  color: rgb(87, 13, 87)
+}
+a:hover {
+  text-decoration: underline;
+}
 a:active {
   color: inherit;
 }
+.projectLink {
+  color: $font-color;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.projectLink:hover {
+  text-decoration: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

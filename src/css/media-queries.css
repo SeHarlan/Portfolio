@@ -37,11 +37,10 @@
   .about-card {
     padding: 0 1rem;
     margin: 0 0.5rem;
-    font-size: 0.8rem;
-    min-height: 50vh;
+    font-size: 0.75rem;
   }
   .about-card img {
-    width: 100px;
+    width: 70px;
   }
 
   .highlighted-projects {
@@ -117,11 +116,10 @@
 
   .about-page .about-header h1 {
     font-size: 2.5rem;
-    top: 12vh;
+    top: 7vh;
   }
   .about-page .about-header .about-card {
-    top: 30vh;
-    max-height: 50vh;
+    top: 22vh;
     margin: 1rem;
   }
   .about-page article {
@@ -328,12 +326,16 @@
   }
 
   .about-page .about-header h1 {
-    top: 10vh;
-    font-size: 2.3rem;
+    top: 11vh;
+    font-size: 2rem;
   }
   .about-page .about-card {
     top: 32vh;
-    height: 50vh;
+    font-size: 0.7rem;
+    padding: 0.2rem 1rem;
+  }
+  .about-page .about-card img {
+    display: none;
   }
   .about-page article {
     width: 95%;

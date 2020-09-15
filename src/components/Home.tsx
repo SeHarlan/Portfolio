@@ -26,7 +26,7 @@ export default class Home extends Component {
     if (time > 4) greeting = 'Good morning '; //from 4am to 10:59am
     if (time > 11) greeting = 'Good afternoon '; //from 11am to 4:59pm
     if (time > 16) greeting = 'Good evening '; //from 5pm to 12am
-    this.setState({ greeting: greeting})
+    this.setState({ greeting: greeting })
   }
   getTitleImg() {
     const { greeting } = this.state
@@ -35,17 +35,15 @@ export default class Home extends Component {
     return scottSunLogo //all other times
   }
   render() {
-    const {greeting } = this.state
     return (
       <section>
         {/* only displays the first time a user is on the home page */}
-        {greeting && <EntryMessage greeting={greeting} />} 
         <header className="home-header">
-          <Nav home={true}/>
+          <Nav home={true} />
           <Waves />
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
           {/* currently expirimenting with d3 Map/globe as a display piece */}
-          {/* <Map /> */} 
+          {/* <Map /> */}
           <p>"A Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
           <img className="grid" src={grid} alt="grid" />
           <Arrows />

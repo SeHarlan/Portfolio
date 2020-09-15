@@ -12,7 +12,7 @@ const ProjectCard = ({ right = false, title, site, github, image = jsIcon, tech,
 
   // "right" boolean is used to determine which side the image is placed
   return (
-    <div className={className}>
+    <a href={site || github} target="_blank" rel="noopener noreferrer" className={`${className} projectLink`}>
       {right && (<article>
         <h4>{tech}</h4>
         <p>{body}</p>
@@ -20,7 +20,8 @@ const ProjectCard = ({ right = false, title, site, github, image = jsIcon, tech,
       <section>
         <div>
           <h3 className={longNameClass}>{title}</h3>
-          {site && (<a href={site} target="_blank" rel="noopener noreferrer">Site</a>)}
+          {site && (<><a href={site} target="_blank" rel="noopener noreferrer">Site</a>
+            <a href={site} target="_blank" rel="noopener noreferrer">|</a></>)}
           <a href={github} target="_blank" rel="noopener noreferrer">Github</a>
         </div>
         <img src={image} alt={title} />
@@ -33,7 +34,7 @@ const ProjectCard = ({ right = false, title, site, github, image = jsIcon, tech,
         <h4>{tech}</h4>
         <p>{body}</p>
       </aside>)}
-    </div>
+    </a>
   )
 }
 export default ProjectCard

@@ -359,8 +359,6 @@ a {
 .about-card {
   font-family: "Roboto Mono", monospace;
   margin-top: 0;
-  max-height: 45vh;
-  overflow: scroll;
   overflow-x: hidden;
 }
 .about-card img {
@@ -544,6 +542,27 @@ a {
   width: 7rem;
   height: 7rem;
   filter: brightness(0.75);
+}
+
+a {
+  color: #570d57;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: inherit;
+}
+
+.projectLink {
+  color: rgba(255, 235, 205, 0.9);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.projectLink:hover {
+  text-decoration: none;
 }
 
 /* width */

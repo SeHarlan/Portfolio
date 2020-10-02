@@ -19,15 +19,13 @@ export default class About extends Component {
           <Arrows />
         </header>
         <article>
-          <h2>Tech Skills and Tools</h2>
+          <h2>Tech Skills</h2>
           <p><h3>Languages: </h3> JavaScript - HTML - CSS - TypeScript</p>
-          <p><h3>Front-End: </h3> React - Redux - useContext - Sass - PostCSS</p>
+          <p><h3>Front-End: </h3> React - Redux - Next.js - Sass - PostCSS</p>
           <p><h3>Back-End: </h3> Node.js/Express - REST APIs - Mongoose - PostgreSQL</p>
+          <p><h3>Full Stack: </h3> Socket.io - GraphQL</p>
           <p><h3>Databases: </h3> SQL - MongoDB</p>
-          <p><h3>Methods: </h3> TDD - Mobile First Design - Pair Programing - Agile</p>
-          <p><h3>Testing: </h3> Jest - Enzyme - Supertest - QUnit - Travis CI - Github CI</p>
-          <p><h3>Tools: </h3> Git/Github - Slack - VSCode - Heroku - Netlify - Compass - Postman - Figma
-          </p>
+          <p><h3>Testing: </h3> Jest - Enzyme - Supertest</p>
         </article>
         <ContactCard />
       </section >

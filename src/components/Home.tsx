@@ -5,7 +5,7 @@ import ContactCard from './ContactCard'
 import AboutCard from './AboutCard'
 import HighlightedProjects from './HighlightedProjects'
 import Arrows from './Arrows'
-import EntryMessage from './EntryMessage'
+// import EntryMessage from './EntryMessage'
 // import Map from './Map'
 
 import scottSunLogo from '../assets/Scott-Harlan.png'

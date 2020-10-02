@@ -21,7 +21,7 @@ export default class About extends Component {
         <article>
           <h2>Tech Skills</h2>
           <p><h3>Languages: </h3> JavaScript - HTML - CSS - TypeScript</p>
-          <p><h3>Front-End: </h3> React - Redux - Next.js - Sass - PostCSS</p>
+          <p><h3>Front-End: </h3> React - Redux - Next.js - Sass - D3</p>
           <p><h3>Back-End: </h3> Node.js/Express - REST APIs - Mongoose - PostgreSQL</p>
           <p><h3>Full Stack: </h3> Socket.io - GraphQL</p>
           <p><h3>Databases: </h3> SQL - MongoDB</p>

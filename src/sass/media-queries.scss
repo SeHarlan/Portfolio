@@ -37,9 +37,17 @@
   .about-card {
     padding: 0 1rem;
     margin: 0 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     img {
-      width: 70px;
+      width: 60px;
+    }
+  }
+  .about-header {
+    font-size: 0.65rem;
+  }
+  .about-page {
+    article {
+      font-size: 0.8rem;
     }
   }
   .highlighted-projects {
@@ -122,26 +130,6 @@
       width : 30px
     }
   }
-  .about-page {
-    .about-header {
-      h1 {
-        font-size: 2.5rem;
-        top: 7vh
-      }
-      .about-card {
-        top: 22vh;
-        margin: 1rem;
-      }
-    }
-    article {
-      margin: 0 auto;
-      padding: 0.5rem 1.2rem;
-      width: 95%;
-      p {
-        font-size: 0.8rem;
-      }
-    }
-  }
   .contact-page {
     .contact-header {
       div {
@@ -184,6 +172,30 @@
 }
 
 @media only screen and (min-width: 421px) and (max-width: 700px) {
+  .about-header {
+    font-size: 0.8rem;
+  }
+  .about-card {
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+    img {
+      width: 80px;
+    }
+  }
+  .navigation {
+    height: 6rem;
+    top: -0.5rem;
+    h4 {
+      width: 3.5rem;
+      height: 0.9rem;
+      font-size: 0.8rem;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
   .highlighted-projects {
     width: 92%;
     header {

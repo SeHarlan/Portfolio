@@ -20,12 +20,7 @@ export default class About extends Component {
         </header>
         <article>
           <h2>Tech Skills</h2>
-          <p><h3>Languages: </h3> JavaScript - HTML - CSS - TypeScript</p>
-          <p><h3>Front-End: </h3> React - Redux - Next.js - Sass - D3</p>
-          <p><h3>Back-End: </h3> Node.js/Express - REST APIs - Mongoose - PostgreSQL</p>
-          <p><h3>Full Stack: </h3> Socket.io - GraphQL</p>
-          <p><h3>Databases: </h3> SQL - MongoDB</p>
-          <p><h3>Testing: </h3> Jest - Enzyme - Supertest</p>
+          <p>React / JavaScript / TypeScript / Node Express / Html / CSS / Sass / D3 / GraphQL REST APIs / Next.js / Redux / Socket.io Mongoose / MongoDB / PostgreSQL / SQL SuperTest / Jest</p>
         </article>
         <ContactCard />
       </section >

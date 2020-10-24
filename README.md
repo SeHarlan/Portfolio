@@ -1,13 +1,9 @@
 ## Scott Harlan
 
-I am a Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges. A background in customer service gives me a unique focus on a client's perspective and overall satisfaction. During the various team sprints I’ve contributed to, I have discovered one of my greatest joys is coming up with unique ideas that solve root problems. I highly value companies that support direct communication, creativity and professional development.
+Simply put, I love to code. I love to push my intellectual and creative abilities as far as they will go and then push further. I thrive while building relationships with diverse teams and collaborating with them to tackle complex challenges.
 
-In my personal life I love nothing more than expressing myself through music. This includes playing in bands like Seance Crasher and producing my own songs and compositions.
+A background in customer service gives me a unique focus on a client's perspective and their overall satisfaction. As a lifelong musician and critical thinker, nothing excites me more than implementing creative ideas to solve technical problems at their root, especially when the results is improvement of other's well-being. I love to execute these ideas with cleanly typed and well organized code, leading to sustainable programs that are easy to maintain and collaborate on.
 
-* Languages: JavaScript, HTML, CSS, TypeScript
-* Front-End: React, Redux, Next.js, D3
-* Back-End: Node.js, Express, Mongoose, PostgreSQL
-* Full Stack: Socket.io, GraphQL
-* DataBases: SQL, MongoDB
-* Testing: Jest, Supertest
+### Tech skills: 
+React / JavaScript / TypeScript / Node Express / Html / CSS / Sass / D3 / GraphQL REST APIs / Next.js / Redux / Socket.io Mongoose / MongoDB / PostgreSQL / SQL SuperTest / Jest
 

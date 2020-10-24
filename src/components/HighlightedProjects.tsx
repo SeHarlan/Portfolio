@@ -20,7 +20,10 @@ export default class HighlightedProjects extends Component {
         github="https://github.com/Going-Viral"
         image={goingViral}
         tech="D3 / Material-UI / Jest / Supertest / Redux / React / Node / MongoDB / Mongoose / Heroku / Netlify"
-        body={`In a ten day sprint my team and I learned D3 from scratch and fused that with our knowledge of React, Redux and MongoDB to create "Going Viral, Pandemic-Related Mobility Metrics". Our data sources included Global Mobility Reports from Google and Global COVID Case data sourced from Bing. My personal focus was munging geoJSON with the Global Mobility Reports and utilizing D3 alongside React to create the interactive choropleth globe. I also guided the architecture of our global state and contributed to the comparison line graphs for mobility metrics between different countries and subregions, and the stacked bar chart for viewing total and daily COVID case numbers.`}
+        body={`I learned D3 in a ten day remote team sprint to visualize Google’s COVID Mobility Reports and Bing's Case Statistics.
+        Munged the mobility data with GeoJSON and fed that to an interactive D3 globe I made. This functional map component integrates with React via custom hooks and a useEffect based update pattern.  
+        I also designed the global state with Redux to asynchronously retrieve our data from our API then feed that to our graphs and charts across the app. 
+        I helped design and implement the user interface using Material-UI.`}
       />
       <ProjectCard title="HAC"
         right={true}
@@ -28,7 +31,11 @@ export default class HighlightedProjects extends Component {
         github="https://github.com/SeHarlan/hards-against-cumanity"
         image={hac}
         tech="Next / socket.io / React / Node / Heroku"
-        body={`For this solo project (Hards Against Cumanity) I learned socket.io and the Next.js framework. Using these technologies, along with React and Node I created an online version of the card game Cards Against Humanity. Socket.io allows for bi-directional communication between web clients and servers. This makes for a seamless interaction between players. In addition to dynamic pages and routing, Next.js allowed me to pre-render the application server-side for faster performance and better SEO.`}
+        body={`I learned Socket.io to create an online version of Cards Against Humanity.
+        With this knowledge I made an API that could automatically create unique Socket.io "rooms" that are synced with a corresponding game-state.
+        I used classes in Node to manage simultaneous game-states on one server. 
+        Utilized Next.js to dynamically create sharable, user named page URLs.
+        Integrated Socket.io event listeners with a custom hook to manage client-side game state within React.`}
       />
 
       <ProjectCard title="Shadespeare"
@@ -36,7 +43,8 @@ export default class HighlightedProjects extends Component {
         github="https://github.com/Shakespeare-Insult-Bot"
         image={shadespeare}
         tech="Markov Chain / Twilio / Regex / Jest / Supertest / React / Node / MongoDB / Mongoose / Heroku"
-        body={`Using the markov-chains-text library, Shakespeare inspired insults were generated for the "Shadespeare" bot. With Twilio's calling and text to voice features you are able to send in Shadespeare to speak in a Zoom call. I lead the team in creating the chatbot, where we utilized regex to capture keywords and phrases so users can interact via text with Shadespeare and receive intelligent responses.`}
+        body={`I used Markov chains to create a semi-intelligent Shakespeare chat bot.
+        I extracted key words from user text input with regex capture groups and used them to help format a uniquely generated and intelligent response.`}
       />
 
 

@@ -44,7 +44,7 @@ export default class Home extends Component {
           <img className="scott-harlan" src={this.getTitleImg()} alt="Scott Harlan" />
           {/* currently expirimenting with d3 Map/globe as a display piece */}
           {/* <Map /> */}
-          <p>"A Software Engineer who thrives on building relationships with diverse teams and tackling complex challenges."</p>
+          <p>"Simply put, I love to code. I love to push my intellectual and creative abilities as far as they will go and then push further."</p>
           <img className="grid" src={grid} alt="grid" />
           <Arrows />
         </header>
